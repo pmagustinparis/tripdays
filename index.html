@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find out how many days you need to explore cities like Paris, London, Tokyo, and more. Tripdays offers recommendations and top attractions for your travel planning.">
+    <meta name="keywords" content="how many days in Paris, how many days in Tokyo, travel days recommendation, travel planning, city travel guide">
+    <meta name="author" content="Tu Nombre">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>How Many Days to Spend in a City | Tripdays Travel Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Tripdays - How many days do you need?</h1>
+        <div class="selector-box">
+            <h2>Choose a city to explore</h2>
+            <select id="city-selector" onchange="showCityInfo()">
+                <option value="">Select a city</option>
+                <option value="paris">Paris</option>
+                <option value="london">London</option>
+                <option value="bangkok">Bangkok</option>
+                <option value="new-york">New York</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="dubai">Dubai</option>
+                <option value="istanbul">Istanbul</option>
+                <option value="singapore">Singapore</option>
+                <option value="rome">Rome</option>
+                <option value="barcelona">Barcelona</option>
+            </select>
+        </div>
+        <div class="result-box" id="city-info">
+            <h2 class="days empty-state">Select a city to explore</h2>
+            <div class="attractions">
+                <h3>Main Attractions</h3>
+                <ul class="attractions-list"></ul>
+            </div>
+        </div>
+        <footer>More cities coming soon.</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
