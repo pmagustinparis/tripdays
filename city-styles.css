@@ -1,0 +1,221 @@
+/* City page specific styles */
+
+.city-container {
+  max-width: 1000px;
+  text-align: left;
+}
+
+.site-nav {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  color: #0d9488;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #f59e0b;
+  text-decoration: underline;
+}
+
+.recommendation {
+  margin: 15px 0 30px;
+  font-size: 18px;
+  color: #cbd5e1;
+}
+
+.days-badge {
+  background-color: #f59e0b;
+  color: #0f172a;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.city-hero {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.city-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.city-intro,
+.days-recommendation,
+.itinerary-section,
+.attractions-section,
+.practical-tips,
+.conclusion {
+  margin-bottom: 40px;
+  background: linear-gradient(
+    to right,
+    rgb(100 116 139 / 0.5),
+    rgb(100 116 139 / 0.2)
+  );
+  backdrop-filter: blur(5px);
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid rgb(255 255 255 / 0.1);
+}
+
+.city-intro p,
+.days-recommendation p,
+.conclusion p {
+  line-height: 1.8;
+  color: #f8fafc;
+  font-size: 16px;
+}
+
+.itinerary-section h2,
+.attractions-section h2,
+.practical-tips h2 {
+  margin-bottom: 20px;
+  color: #0d9488;
+}
+
+.day-plan {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(255 255 255 / 0.1);
+}
+
+.day-plan:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.day-plan h3 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #f59e0b;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.day-content p {
+  line-height: 1.8;
+  color: #f8fafc;
+}
+
+.attractions-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.attractions-list li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+  color: #f8fafc;
+  line-height: 1.6;
+}
+
+.attractions-list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #f59e0b;
+  font-size: 20px;
+}
+
+.tip-category {
+  margin-bottom: 20px;
+}
+
+.tip-category h3 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #f59e0b;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.tip-category p {
+  line-height: 1.8;
+  color: #f8fafc;
+}
+
+.related-cities {
+  margin-bottom: 40px;
+}
+
+.related-cities h2 {
+  margin-bottom: 20px;
+  color: #0d9488;
+}
+
+.city-grid.small {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: #0d9488;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f59e0b;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .city-container {
+    padding: 20px;
+  }
+
+  .day-plan h3 {
+    font-size: 18px;
+  }
+
+  .city-intro,
+  .days-recommendation,
+  .itinerary-section,
+  .attractions-section,
+  .practical-tips,
+  .conclusion {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .city-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .day-plan h3 {
+    font-size: 16px;
+  }
+
+  .city-intro,
+  .days-recommendation,
+  .itinerary-section,
+  .attractions-section,
+  .practical-tips,
+  .conclusion {
+    padding: 15px;
+  }
+
+  .city-grid.small {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+  }
+}

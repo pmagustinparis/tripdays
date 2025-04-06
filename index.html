@@ -1,53 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Find out how many days you need to explore cities like Paris, London, Tokyo, and more. Tripdays offers recommendations and top attractions for your travel planning.">
-    <meta name="keywords" content="how many days in Paris, how many days in Tokyo, travel days recommendation, travel planning, city travel guide">
-    <meta name="author" content="Tu Nombre">
-    <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <title>How Many Days to Spend in a City | Tripdays Travel Guide</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Fuentes de Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find out how many days you need to explore popular cities worldwide. Tripdays offers travel recommendations, itineraries, and top attractions for your perfect trip planning."
+    />
+    <meta
+      name="keywords"
+      content="how many days in Paris, how many days in Tokyo, travel days recommendation, travel planning, city travel guide, travel itinerary"
+    />
+    <meta name="author" content="Tripdays" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>
+      How Many Days to Spend in Popular Cities | Tripdays Travel Guide
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "Tripdays",
+        "url": "https://tripdays.co",
+        "description": "Find out how many days you need to explore popular cities worldwide.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://tripdays.co/cities/{city}",
+          "query-input": "required name=city"
+        }
+      }
+    </script>
+  </head>
+  <body>
     <div class="container">
-        <h1>Tripdays - How many days do you need?</h1>
-        <div class="selector-box">
-            <h2>Choose a city to explore</h2>
-            <select id="city-selector" onchange="showCityInfo()">
-                <option value="">Select a city</option>
-                <option value="paris">Paris</option>
-                <option value="london">London</option>
-                <option value="bangkok">Bangkok</option>
-                <option value="new-york">New York</option>
-                <option value="tokyo">Tokyo</option>
-                <option value="dubai">Dubai</option>
-                <option value="istanbul">Istanbul</option>
-                <option value="singapore">Singapore</option>
-                <option value="rome">Rome</option>
-                <option value="barcelona">Barcelona</option>
-                <option value="sydney">Sydney</option>
-                <option value="cape-town">Cape Town</option>
-                <option value="rio-de-janeiro">Rio de Janeiro</option>
-                <option value="kyoto">Kyoto</option>
-                <option value="prague">Prague</option>
-            </select>
+      <header>
+        <h1>Tripdays - How Many Days Do You Need?</h1>
+        <p class="tagline">
+          Expert recommendations for the perfect city trip duration
+        </p>
+      </header>
+
+      <div class="intro-section">
+        <h2>Plan Your Perfect City Trip</h2>
+        <p>
+          Wondering how many days you need to explore a city? Tripdays helps you
+          plan the ideal trip duration with expert recommendations, must-see
+          attractions, and day-by-day itineraries for popular destinations
+          worldwide.
+        </p>
+      </div>
+
+      <div class="selector-box">
+        <h2>Choose a city to explore</h2>
+        <select id="city-selector" onchange="navigateToCity()">
+          <option value="">Select a city</option>
+          <option value="paris">Paris</option>
+          <option value="london">London</option>
+          <option value="bangkok">Bangkok</option>
+          <option value="new-york">New York</option>
+          <option value="tokyo">Tokyo</option>
+          <option value="dubai">Dubai</option>
+          <option value="istanbul">Istanbul</option>
+          <option value="singapore">Singapore</option>
+          <option value="rome">Rome</option>
+          <option value="barcelona">Barcelona</option>
+          <option value="sydney">Sydney</option>
+          <option value="cape-town">Cape Town</option>
+          <option value="rio-de-janeiro">Rio de Janeiro</option>
+          <option value="kyoto">Kyoto</option>
+          <option value="prague">Prague</option>
+        </select>
+      </div>
+
+      <div class="popular-cities">
+        <h2>Popular Destinations</h2>
+        <div class="city-grid">
+          <a href="cities/paris.html" class="city-card">
+            <div
+              class="city-image"
+              style="background-image: url('images/paris.jpg')"
+            ></div>
+            <h3>Paris</h3>
+            <p>5-7 days</p>
+          </a>
+          <a href="cities/london.html" class="city-card">
+            <div
+              class="city-image"
+              style="background-image: url('images/london.jpg')"
+            ></div>
+            <h3>London</h3>
+            <p>5-7 days</p>
+          </a>
+          <a href="cities/new-york.html" class="city-card">
+            <div
+              class="city-image"
+              style="background-image: url('images/new-york.jpg')"
+            ></div>
+            <h3>New York</h3>
+            <p>5-7 days</p>
+          </a>
+          <a href="cities/tokyo.html" class="city-card">
+            <div
+              class="city-image"
+              style="background-image: url('images/tokyo.jpg')"
+            ></div>
+            <h3>Tokyo</h3>
+            <p>7-10 days</p>
+          </a>
         </div>
-        <div class="result-box" id="city-info">
-            <h2 class="days empty-state">Select a city to explore</h2>
-            <div class="attractions">
-                <h3>Main Attractions</h3>
-                <ul class="attractions-list"></ul>
-            </div>
+        <div class="view-all">
+          <a href="#" onclick="document.getElementById('city-selector').focus()"
+            >View all cities</a
+          >
         </div>
-        <footer>More cities coming soon.</footer>
+      </div>
+
+      <div class="about-section">
+        <h2>Why Trust Tripdays?</h2>
+        <p>
+          Our recommendations are based on extensive research and real traveler
+          experiences. We consider factors like travel distances between
+          attractions, opening hours, and seasonal variations to give you the
+          most accurate time estimates for your trip.
+        </p>
+      </div>
+
+      <footer>
+        <p>© 2025 Tripdays - Your travel planning companion</p>
+        <p>More cities and features coming soon.</p>
+      </footer>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

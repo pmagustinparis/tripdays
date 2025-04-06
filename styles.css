@@ -1,158 +1,235 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-    font-family: "Inter", sans-serif;
-    background: linear-gradient(to bottom, #0f172a, #312e81);
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: #f8fafc;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to bottom, #0f172a, #312e81);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #f8fafc;
 }
+
 .container {
-    text-align: center;
-    background-color: rgb(100 116 139 / 0.2);
-    backdrop-filter: blur(10px);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 40px rgb(0 0 0 / 0.4);
-    max-width: 700px;
-    width: 100%;
-    border: 1px solid rgb(255 255 255 / 0.1);
+  text-align: center;
+  background-color: rgb(100 116 139 / 0.2);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgb(0 0 0 / 0.4);
+  max-width: 900px;
+  width: 100%;
+  border: 1px solid rgb(255 255 255 / 0.1);
 }
+
+header {
+  margin-bottom: 30px;
+}
+
 h1 {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 32px;
-    color: #0d9488;
-    margin-bottom: 20px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 32px;
+  color: #0d9488;
+  margin-bottom: 10px;
 }
+
+.tagline {
+  color: #cbd5e1;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #f8fafc;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.intro-section {
+  margin-bottom: 30px;
+  background: linear-gradient(
+    to right,
+    rgb(100 116 139 / 0.5),
+    rgb(100 116 139 / 0.2)
+  );
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(255 255 255 / 0.1);
+}
+
+.intro-section p {
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
 .selector-box {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
+
 .selector-box h2 {
-    color: #cbd5e1;
-    font-size: 16px;
-    margin-bottom: 15px;
+  color: #cbd5e1;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
+
 select {
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 2px solid #0d9488;
-    background-color: rgb(100 116 139 / 0.3);
-    backdrop-filter: blur(5px);
-    color: #f8fafc;
-    width: 100%;
-    max-width: 300px;
-    cursor: pointer;
-    transition: border-color 0.3s ease;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #0d9488;
+  background-color: rgb(100 116 139 / 0.3);
+  backdrop-filter: blur(5px);
+  color: #f8fafc;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
 }
+
 select option {
-    background-color: #0f172a;
-    color: #f8fafc;
+  background-color: #0f172a;
+  color: #f8fafc;
 }
+
 select:hover,
 select:focus {
-    border-color: #f59e0b;
+  border-color: #f59e0b;
 }
-.result-box {
-    background: linear-gradient(to right, rgb(100 116 139 / 0.5), rgb(100 116 139 / 0.2));
-    backdrop-filter: blur(10px);
-    padding: 30px;
-    border-radius: 10px;
-    border: 1px solid rgb(255 255 255 / 0.1);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    opacity: 0;
-    transform: translateY(10px);
+
+.popular-cities {
+  margin-bottom: 30px;
 }
-.result-box.visible {
-    opacity: 1;
-    transform: translateY(0);
+
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
-.days {
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 60px;
-    font-weight: 700;
-    color: #f59e0b;
-    margin-bottom: 30px;
-    text-align: center;
-    background: linear-gradient(to right, rgb(15 23 42 / 0.8), transparent);
-    padding: 10px;
-    border-radius: 5px;
+
+.city-card {
+  background: linear-gradient(
+    to bottom,
+    rgb(100 116 139 / 0.5),
+    rgb(100 116 139 / 0.2)
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #f8fafc;
+  border: 1px solid rgb(255 255 255 / 0.1);
 }
-.days.empty-state {
-    font-size: 24px;
-    color: #cbd5e1;
-    margin-bottom: 20px;
-    background: none;
-    padding: 0;
+
+.city-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.city-description {
-    font-size: 16px;
-    color: #cbd5e1;
-    margin-bottom: 20px;
-    text-align: center;
+
+.city-image {
+  height: 120px;
+  background-size: cover;
+  background-position: center;
 }
-.attractions {
-    text-align: left;
-    margin-left: 60px;
+
+.city-card h3 {
+  padding: 10px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
 }
-.attractions h3 {
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    color: #f8fafc;
-    margin-bottom: 15px;
+
+.city-card p {
+  padding: 0 10px 10px;
+  color: #f59e0b;
+  font-size: 14px;
 }
-.attractions-list {
-    list-style-type: none;
-    font-size: 16px;
+
+.view-all {
+  margin-top: 20px;
 }
-.attractions-list li {
-    margin-bottom: 12px;
-    position: relative;
-    padding-left: 20px;
-    color: #f8fafc;
+
+.view-all a {
+  color: #0d9488;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
-.attractions-list li:before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #0d9488;
+
+.view-all a:hover {
+  color: #f59e0b;
+  text-decoration: underline;
 }
+
+.about-section {
+  margin-bottom: 30px;
+  background: linear-gradient(
+    to right,
+    rgb(100 116 139 / 0.5),
+    rgb(100 116 139 / 0.2)
+  );
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(255 255 255 / 0.1);
+}
+
+.about-section p {
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
 footer {
-    margin-top: 30px;
-    color: #cbd5e1;
-    font-size: 14px;
+  margin-top: 30px;
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .city-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
 @media (max-width: 600px) {
-    .container {
-        padding: 20px;
-    }
-    h1 {
-        font-size: 24px;
-    }
-    select {
-        max-width: 100%;
-    }
-    .days {
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
-    .days.empty-state {
-        font-size: 20px;
-    }
-    .attractions {
-        margin-left: 30px;
-    }
-    .attractions h3 {
-        font-size: 16px;
-    }
-    .attractions-list {
-        font-size: 14px;
-    }
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  select {
+    max-width: 100%;
+  }
+
+  .city-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 15px;
+  }
+
+  .city-image {
+    height: 100px;
+  }
+
+  .city-card h3 {
+    font-size: 16px;
+  }
 }
