@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Find out how many days you need to explore popular cities worldwide. Tripdays offers travel recommendations, itineraries, and top attractions for your perfect trip planning."
+      content="Plan your perfect trip with Tripdays! Find out how many days to spend in popular cities and get tailored travel itineraries."
     />
     <meta
       name="keywords"
-      content="how many days in Paris, how many days in Tokyo, travel days recommendation, travel planning, city travel guide, travel itinerary"
+      content="travel days, trip planning, city travel guide, travel itineraries, Tripdays"
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
@@ -18,7 +18,6 @@
       How Many Days to Spend in Popular Cities | Tripdays Travel Guide
     </title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,58 +31,43 @@
         "@type": "TravelAgency",
         "name": "Tripdays",
         "url": "https://tripdays.co",
-        "description": "Find out how many days you need to explore popular cities worldwide.",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://tripdays.co/cities/{city}",
-          "query-input": "required name=city"
-        }
+        "description": "Tripdays helps you plan your perfect trip by recommending how many days to spend in popular cities with tailored travel itineraries."
       }
     </script>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Tripdays - How Many Days Do You Need?</h1>
-        <p class="tagline">
-          Expert recommendations for the perfect city trip duration
-        </p>
-      </header>
-
-      <div class="intro-section">
-        <h2>Plan Your Perfect City Trip</h2>
+        <h1>How Many Days Should You Spend in Your Next City?</h1>
         <p>
-          Wondering how many days you need to explore a city? Tripdays helps you
-          plan the ideal trip duration with expert recommendations, must-see
-          attractions, and day-by-day itineraries for popular destinations
-          worldwide.
+          Plan your perfect trip with Tripdays! Select a city to find out how
+          many days you need and get a tailored itinerary.
         </p>
-      </div>
-
-      <div class="selector-box">
-        <h2>Choose a city to explore</h2>
-        <select id="city-selector" onchange="navigateToCity()">
-          <option value="">Select a city</option>
-          <option value="paris">Paris</option>
-          <option value="london">London</option>
-          <option value="bangkok">Bangkok</option>
-          <option value="new-york">New York</option>
-          <option value="tokyo">Tokyo</option>
-          <option value="dubai">Dubai</option>
-          <option value="istanbul">Istanbul</option>
-          <option value="singapore">Singapore</option>
-          <option value="rome">Rome</option>
-          <option value="barcelona">Barcelona</option>
-          <option value="sydney">Sydney</option>
-          <option value="cape-town">Cape Town</option>
-          <option value="rio-de-janeiro">Rio de Janeiro</option>
-          <option value="kyoto">Kyoto</option>
-          <option value="prague">Prague</option>
-        </select>
-      </div>
+        <div class="city-selector">
+          <select id="city-selector" onchange="navigateToCity()">
+            <option value="" disabled selected>Select a city</option>
+            <option value="paris">Paris</option>
+            <option value="london">London</option>
+            <option value="bangkok">Bangkok</option>
+            <option value="new-york">New York</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="dubai">Dubai</option>
+            <option value="istanbul">Istanbul</option>
+            <option value="singapore">Singapore</option>
+            <option value="rome">Rome</option>
+            <option value="barcelona">Barcelona</option>
+            <option value="sydney">Sydney</option>
+            <option value="cape-town">Cape Town</option>
+            <option value="rio-de-janeiro">Rio de Janeiro</option>
+            <option value="kyoto">Kyoto</option>
+            <option value="prague">Prague</option>
+          </select>
+        </div>
+      </header>
 
       <div class="popular-cities">
         <h2>Popular Destinations</h2>
+        <p>Explore some of the most visited cities around the world.</p>
         <div class="city-grid">
           <a href="cities/paris.html" class="city-card">
             <div
@@ -109,35 +93,22 @@
             <h3>New York</h3>
             <p>5-7 days</p>
           </a>
-          <a href="cities/tokyo.html" class="city-card">
-            <div
-              class="city-image"
-              style="background-image: url('images/tokyo.jpg')"
-            ></div>
-            <h3>Tokyo</h3>
-            <p>7-10 days</p>
-          </a>
-        </div>
-        <div class="view-all">
-          <a href="#" onclick="document.getElementById('city-selector').focus()"
-            >View all cities</a
-          >
         </div>
       </div>
 
-      <div class="about-section">
+      <div class="why-trust">
         <h2>Why Trust Tripdays?</h2>
         <p>
-          Our recommendations are based on extensive research and real traveler
-          experiences. We consider factors like travel distances between
-          attractions, opening hours, and seasonal variations to give you the
-          most accurate time estimates for your trip.
+          At Tripdays, we simplify travel planning by recommending the ideal
+          number of days for each destination, based on insights from seasoned
+          travelers and local experts. Our itineraries are designed to help you
+          make the most of your trip, whether you're a first-time visitor or a
+          seasoned explorer.
         </p>
       </div>
 
       <footer>
         <p>© 2025 Tripdays - Your travel planning companion</p>
-        <p>More cities and features coming soon.</p>
       </footer>
     </div>
     <script src="script.js"></script>
