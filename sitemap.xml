@@ -2,46 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tripdays.co/</loc>
-    <lastmod>2025-04-06</lastmod>
+    <lastmod>2025-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://tripdays.co/cities/paris.html</loc>
-    <lastmod>2025-04-06</lastmod>
+    <lastmod>2025-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tripdays.co/cities/london.html</loc>
-    <lastmod>2025-04-06</lastmod>
+    <lastmod>2025-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tripdays.co/cities/bangkok.html</loc>
+    <lastmod>2025-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tripdays.co/cities/new-york.html</loc>
-    <lastmod>2025-04-06</lastmod>
+    <lastmod>2025-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tripdays.co/cities/tokyo.html</loc>
-    <lastmod>2025-04-06</lastmod>
+    <lastmod>2025-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tripdays.co/cities/dubai.html</loc>
+    <lastmod>2025-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tripdays.co/cities/istanbul.html</loc>
+    <lastmod>2025-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tripdays.co/cities/singapore.html</loc>
+    <lastmod>2025-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tripdays.co/cities/rome.html</loc>
-    <lastmod>2025-04-06</lastmod>
+    <lastmod>2025-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tripdays.co/cities/barcelona.html</loc>
-    <lastmod>2025-04-06</lastmod>
+    <lastmod>2025-04-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Add entries for all other city pages -->
+  <url>
+    <loc>https://tripdays.co/cities/sydney.html</loc>
+    <lastmod>2025-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tripdays.co/cities/cape-town.html</loc>
+    <lastmod>2025-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tripdays.co/cities/rio-de-janeiro.html</loc>
+    <lastmod>2025-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tripdays.co/cities/kyoto.html</loc>
+    <lastmod>2025-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tripdays.co/cities/prague.html</loc>
+    <lastmod>2025-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
-
