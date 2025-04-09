@@ -1,130 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Plan your perfect trip with Tripdays! Find out how many days to spend in popular cities and get tailored travel itineraries."
-    />
-    <meta
-      name="keywords"
-      content="travel days, trip planning, city travel guide, travel itineraries, Tripdays"
-    />
-    <meta name="author" content="Tripdays" />
-    <meta name="robots" content="index, follow" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <title>
-      How Many Days to Spend in Popular Cities | Tripdays Travel Guide
-    </title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "TravelAgency",
-        "name": "Tripdays",
-        "url": "https://tripdays.co",
-        "description": "Tripdays helps you plan your perfect trip by recommending how many days to spend in popular cities with tailored travel itineraries."
-      }
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-QBDBHNMZN6"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-QBDBHNMZN6");
-    </script>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>How Many Days Should You Spend in Your Next City?</h1>
-        <p>
-          Plan your perfect trip with Tripdays! Select a city to find out how
-          many days you need and get a tailored itinerary.
-        </p>
-        <div class="city-selector">
-          <select id="city-selector" onchange="navigateToCity()">
-            <option value="" disabled selected>Select a city</option>
-            <option value="paris">Paris</option>
-            <option value="london">London</option>
-            <option value="bangkok">Bangkok</option>
-            <option value="new-york">New York</option>
-            <option value="tokyo">Tokyo</option>
-            <option value="dubai">Dubai</option>
-            <option value="istanbul">Istanbul</option>
-            <option value="singapore">Singapore</option>
-            <option value="rome">Rome</option>
-            <option value="barcelona">Barcelona</option>
-            <option value="sydney">Sydney</option>
-            <option value="cape-town">Cape Town</option>
-            <option value="rio-de-janeiro">Rio de Janeiro</option>
-            <option value="kyoto">Kyoto</option>
-            <option value="prague">Prague</option>
-          </select>
-        </div>
-      </header>
-
-      <div class="popular-cities">
-        <h2>Popular Destinations</h2>
-        <p>Explore some of the most visited cities around the world.</p>
-        <div class="city-grid">
-          <a href="cities/paris.html" class="city-card">
-            <div
-              class="city-image"
-              style="background-image: url('images/paris.jpg')"
-            ></div>
-            <h3>Paris</h3>
-            <p>5-7 days</p>
-          </a>
-          <a href="cities/london.html" class="city-card">
-            <div
-              class="city-image"
-              style="background-image: url('images/london.jpg')"
-            ></div>
-            <h3>London</h3>
-            <p>5-7 days</p>
-          </a>
-          <a href="cities/new-york.html" class="city-card">
-            <div
-              class="city-image"
-              style="background-image: url('images/new-york.jpg')"
-            ></div>
-            <h3>New York</h3>
-            <p>5-7 days</p>
-          </a>
-        </div>
-      </div>
-
-      <div class="why-trust">
-        <h2>Why Trust Tripdays?</h2>
-        <p>
-          At Tripdays, we simplify travel planning by recommending the ideal
-          number of days for each destination, based on insights from seasoned
-          travelers and local experts. Our itineraries are designed to help you
-          make the most of your trip, whether you're a first-time visitor or a
-          seasoned explorer.
-        </p>
-      </div>
-
-      <footer>
-        <p>© 2025 Tripdays - Your travel planning companion</p>
-      </footer>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plan your perfect trip with Tripdays! Find out how many days to spend in your dream destination." />
+  <meta name="keywords" content="travel days, trip planning, Tripdays, travel itinerary" />
+  <meta name="author" content="Tripdays" />
+  <meta name="robots" content="index, follow" />
+  <title>Tripdays - Plan Your Perfect Trip</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QBDBHNMZN6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QBDBHNMZN6');
+  </script>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Plan Your Perfect Trip with Tripdays</h1>
+      <p>Find out how many days to spend in your dream destination.</p>
     </div>
-    <script src="script.js"></script>
-  </body>
-</html>
+  </section>
+
+  <!-- Popular Destinations Section -->
+  <section class="popular-destinations">
+    <h2 class="section-title">Start Your Journey Here</h2>
+    <div class="city-grid">
+      <a href="/cities/paris.html" class="city-card">
+        <div class="city-image" style="background-image: url('images/paris.jpg')"></div>
+        <h3>Paris</h3>
+        <p>4-6 days</p>
+      </a>
+      <a href="/cities/london.html" class="city-card">
+        <div class="city-image" style="background-image: url('images/london.jpg')"></div>
+        <h3>London</h3>
+        <p>5-7 days</p>
+      </a>
+      <a href="/cities/new-york.html" class="city-card">
+        <div class="city-image" style="background-image: url('images/new-york.jpg')"></div>
+        <h3>New York</h3>
+        <p>5-7 days</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Dropdown Section -->
+  <section class="dropdown-section">
+    <h2 class="section-title">Explore More Destinations</h2>
+    <select onchange="if (this.value) window.location.href=this.value">
+      <option value="">Select a city...</option>
+      <option value="/cities/paris.html">Paris</option>
+      <option value="/cities/london.html">London</option>
+      <option value="/cities/bangkok.html">Bangkok</option>
+      <option value="/cities/new-york.html">New York</option>
+      <option value="/cities/tokyo.html">Tokyo</option>
+      <option value="/cities/dubai.html">Dubai</option>
+      <option value="/cities/istanbul.html">Istanbul</option>
+      <option value="/cities/singapore.html">Singapore</option>
+      <option

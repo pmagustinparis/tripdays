@@ -1,221 +1,213 @@
-/* City page specific styles */
-
-.city-container {
-  max-width: 1000px;
-  text-align: left;
+/* Reset básico para márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.site-nav {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.back-link {
-  color: #0d9488;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  transition: color 0.3s ease;
-}
-
-.back-link:hover {
-  color: #f59e0b;
-  text-decoration: underline;
-}
-
-.recommendation {
-  margin: 15px 0 30px;
-  font-size: 18px;
-  color: #cbd5e1;
-}
-
-.days-badge {
-  background-color: #f59e0b;
-  color: #0f172a;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-weight: 700;
-  margin-right: 5px;
-}
-
-.city-hero {
-  margin-bottom: 30px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-}
-
-.city-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-}
-
-.city-intro,
-.days-recommendation,
-.itinerary-section,
-.attractions-section,
-.practical-tips,
-.conclusion {
-  margin-bottom: 40px;
-  background: linear-gradient(
-    to right,
-    rgb(100 116 139 / 0.5),
-    rgb(100 116 139 / 0.2)
-  );
-  backdrop-filter: blur(5px);
-  padding: 25px;
-  border-radius: 10px;
-  border: 1px solid rgb(255 255 255 / 0.1);
-}
-
-.city-intro p,
-.days-recommendation p,
-.conclusion p {
-  line-height: 1.8;
-  color: #f8fafc;
-  font-size: 16px;
-}
-
-.itinerary-section h2,
-.attractions-section h2,
-.practical-tips h2 {
-  margin-bottom: 20px;
-  color: #0d9488;
-}
-
-.day-plan {
-  margin-bottom: 25px;
-  padding-bottom: 25px;
-  border-bottom: 1px solid rgb(255 255 255 / 0.1);
-}
-
-.day-plan:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.day-plan h3 {
-  font-family: "Space Grotesk", sans-serif;
-  color: #f59e0b;
-  margin-bottom: 15px;
-  font-size: 20px;
-}
-
-.day-content p {
-  line-height: 1.8;
-  color: #f8fafc;
-}
-
-.attractions-list {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.attractions-list li {
-  margin-bottom: 15px;
-  position: relative;
-  padding-left: 25px;
-  color: #f8fafc;
+/* Estilos generales */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5; /* Fondo claro */
+  color: #333;
   line-height: 1.6;
 }
 
-.attractions-list li:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #f59e0b;
-  font-size: 20px;
+/* Estilos para los títulos */
+h1,
+h2,
+h3 {
+  color: #1a3c5a; /* Azul oscuro */
+  font-weight: 700;
 }
 
-.tip-category {
-  margin-bottom: 20px;
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.tip-category h3 {
-  font-family: "Space Grotesk", sans-serif;
-  color: #f59e0b;
-  margin-bottom: 10px;
-  font-size: 18px;
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
-.tip-category p {
-  line-height: 1.8;
-  color: #f8fafc;
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
-.related-cities {
-  margin-bottom: 40px;
+/* Estilos para los párrafos */
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
-.related-cities h2 {
-  margin-bottom: 20px;
-  color: #0d9488;
-}
-
-.city-grid.small {
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-}
-
-footer {
-  text-align: center;
-}
-
-footer a {
-  color: #0d9488;
+/* Estilos para los enlaces */
+a {
+  color: #1a3c5a; /* Azul oscuro */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-footer a:hover {
-  color: #f59e0b;
-  text-decoration: underline;
+a:hover {
+  color: #f28c38; /* Naranja al pasar el mouse */
 }
 
+/* Sección City Hero */
+.city-hero {
+  position: relative;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-color: #1a3c5a; /* Color de respaldo por si la imagen no carga */
+}
+
+.city-hero .city-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.city-hero h1,
+.city-hero p {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.city-hero p {
+  font-size: 1.2rem;
+}
+
+/* Sección City Content */
+.city-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.city-content strong {
+  font-weight: 700;
+}
+
+/* Sección Local Tips */
+.local-tips {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff; /* Fondo blanco para destacar */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.local-tips h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.local-tips p {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.local-tips i {
+  margin-right: 0.5rem;
+  color: #f28c38; /* Naranja para el ícono */
+  font-size: 1.2rem;
+}
+
+/* Sección Explore More */
+.explore-more {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.explore-more h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.city-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.city-card:hover {
+  transform: translateY(-5px);
+}
+
+.city-card .city-image {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.city-card h3,
+.city-card p {
+  padding: 0.5rem 1rem;
+  color: #333;
+}
+
+.city-card h3 {
+  font-size: 1.2rem;
+}
+
+.city-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .city-container {
-    padding: 20px;
-  }
-
-  .day-plan h3 {
-    font-size: 18px;
-  }
-
-  .city-intro,
-  .days-recommendation,
-  .itinerary-section,
-  .attractions-section,
-  .practical-tips,
-  .conclusion {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .city-container {
-    padding: 15px;
-  }
-
   h1 {
-    font-size: 24px;
+    font-size: 2rem;
   }
 
-  .day-plan h3 {
-    font-size: 16px;
+  h2 {
+    font-size: 1.5rem;
   }
 
-  .city-intro,
-  .days-recommendation,
-  .itinerary-section,
-  .attractions-section,
-  .practical-tips,
-  .conclusion {
-    padding: 15px;
+  .city-hero {
+    height: 300px;
   }
 
-  .city-grid.small {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 15px;
+  .city-hero p {
+    font-size: 1rem;
+  }
+
+  .city-content,
+  .local-tips,
+  .explore-more {
+    padding: 0 0.5rem;
+  }
+
+  .city-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .city-card .city-image {
+    height: 200px;
   }
 }
