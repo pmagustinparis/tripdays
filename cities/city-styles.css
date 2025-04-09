@@ -13,6 +13,24 @@ body {
   line-height: 1.6;
 }
 
+/* Estilos para el header */
+.site-header {
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a3c5a;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  color: #f28c38;
+}
+
 /* Estilos para los títulos */
 h1,
 h2,
@@ -78,10 +96,21 @@ a:hover {
   z-index: 1;
 }
 
+.city-hero .city-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Capa semitransparente negra */
+  z-index: 2;
+}
+
 .city-hero h1,
 .city-hero p {
   position: relative;
-  z-index: 2;
+  z-index: 3; /* Asegurarse de que el texto esté por encima de la superposición */
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -125,6 +154,31 @@ a:hover {
   margin-right: 0.5rem;
   color: #f28c38; /* Naranja para el ícono */
   font-size: 1.2rem;
+}
+
+/* Sección Top Attractions */
+.top-attractions {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.top-attractions h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.top-attractions ul {
+  list-style: none;
+}
+
+.top-attractions li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.top-attractions strong {
+  color: #1a3c5a;
 }
 
 /* Sección Explore More */
@@ -199,7 +253,8 @@ a:hover {
 
   .city-content,
   .local-tips,
-  .explore-more {
+  .explore-more,
+  .top-attractions {
     padding: 0 0.5rem;
   }
 

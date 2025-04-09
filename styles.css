@@ -17,7 +17,7 @@ body {
   background-image: url("images/hero-background.jpg"); /* Asegúrate de tener esta imagen */
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 400px; /* Reducimos el alto de 60vh a 400px para que sea más compacto */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,6 +50,23 @@ body {
 .hero p {
   font-size: 1.2rem;
   color: #ffffff;
+  margin-bottom: 1.5rem; /* Espacio para el botón CTA */
+}
+
+/* Botón CTA */
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #f28c38;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #1a3c5a;
 }
 
 /* General Typography */
@@ -143,6 +160,10 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .hero {
+    height: 300px; /* Reducimos aún más el alto en móvil */
+  }
+
   .hero h1 {
     font-size: 2rem;
   }
