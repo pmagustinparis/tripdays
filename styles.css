@@ -17,7 +17,7 @@ body {
   background-image: url("images/hero-background.jpg"); /* Asegúrate de tener esta imagen */
   background-size: cover;
   background-position: center;
-  height: 400px; /* Reducimos el alto de 60vh a 400px para que sea más compacto */
+  height: 500px; /* Ajustamos el alto para que sea más impactante */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +32,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3); /* Overlay oscuro para legibilidad */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Overlay más oscuro para mejor legibilidad */
 }
 
 .hero-content {
@@ -41,32 +46,36 @@ body {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #ffffff;
-  margin-bottom: 1.5rem; /* Espacio para el botón CTA */
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Botón CTA */
 .cta-button {
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   background-color: #f28c38;
   color: white;
+  font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta-button:hover {
   background-color: #1a3c5a;
+  transform: scale(1.05);
 }
 
 /* General Typography */
@@ -81,6 +90,13 @@ h3 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #1a3c5a;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -99,76 +115,87 @@ a:hover {
 /* City Cards */
 .city-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .city-card {
+  position: relative;
   background-color: #ffffff; /* Fondo blanco para las tarjetas */
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .city-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .city-image {
-  height: 200px;
+  height: 220px;
   background-size: cover;
   background-position: center;
 }
 
 .city-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 1rem;
   color: #1a3c5a;
 }
 
 .city-card p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0 1rem 1rem;
   color: #333333;
 }
 
-/* Dropdown Section */
-.dropdown-section {
-  text-align: center;
-  padding: 2rem;
-}
-
-.dropdown-section select {
-  padding: 0.5rem;
+.discover-button {
+  display: block;
+  width: calc(100% - 2rem);
+  margin: 0 auto 1rem;
+  padding: 0.75rem;
+  background-color: #1a3c5a;
+  color: white;
   font-size: 1rem;
-  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  border: none;
   border-radius: 4px;
-  border: 1px solid #1a3c5a;
-  color: #1a3c5a;
-  background-color: #ffffff;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.dropdown-section select:focus {
-  outline: none;
-  border-color: #f28c38;
+.discover-button:hover {
+  background-color: #f28c38;
+}
+
+/* Destinations Section */
+.destinations-section {
+  padding: 4rem 0;
+  background-color: #ffffff;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero {
-    height: 300px; /* Reducimos aún más el alto en móvil */
+    height: 400px;
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .hero p {
+    font-size: 1.2rem;
+  }
+
+  .cta-button {
+    padding: 0.75rem 1.5rem;
     font-size: 1rem;
   }
 
@@ -176,7 +203,19 @@ a:hover {
     font-size: 2rem;
   }
 
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
   .city-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  .city-card p {
+    font-size: 1rem;
+  }
+
+  .city-image {
+    height: 180px;
   }
 }

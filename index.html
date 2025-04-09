@@ -38,22 +38,26 @@
       gtag("js", new Date());
       gtag("config", "G-QBDBHNMZN6");
     </script>
-    <!-- Incluir script.js para manejar el desplegable -->
     <script src="script.js" defer></script>
   </head>
   <body>
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Plan Your Perfect Trip with Tripdays</h1>
-        <p>Find out how many days to spend in your dream destination.</p>
-        <a href="#start-journey" class="cta-button">Start Planning Now</a>
+        <h1>Discover How Many Days to Spend in Your Dream Destination</h1>
+        <p>Plan your perfect trip with Tripdays.</p>
+        <a href="#" onclick="focusCitySelector()" class="cta-button"
+          >Choose Your Destination</a
+        >
       </div>
     </section>
 
-    <!-- Popular Destinations Section -->
-    <section class="popular-destinations">
-      <h2 class="section-title">Start Your Journey Here</h2>
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations-section">
+      <h2 class="section-title">Discover Your Perfect Destination</h2>
+      <p class="section-subtitle">
+        Select a city to find out how many days to spend there.
+      </p>
       <div class="city-grid">
         <a href="/cities/paris.html" class="city-card">
           <div
@@ -62,6 +66,7 @@
           ></div>
           <h3>Paris</h3>
           <p>4-6 days</p>
+          <button class="discover-button">Discover Paris</button>
         </a>
         <a href="/cities/london.html" class="city-card">
           <div
@@ -70,6 +75,7 @@
           ></div>
           <h3>London</h3>
           <p>5-7 days</p>
+          <button class="discover-button">Discover London</button>
         </a>
         <a href="/cities/new-york.html" class="city-card">
           <div
@@ -78,31 +84,117 @@
           ></div>
           <h3>New York</h3>
           <p>5-7 days</p>
+          <button class="discover-button">Discover New York</button>
+        </a>
+        <a href="/cities/bangkok.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('images/bangkok.jpg')"
+          ></div>
+          <h3>Bangkok</h3>
+          <p>5-7 days</p>
+          <button class="discover-button">Discover Bangkok</button>
+        </a>
+        <a href="/cities/tokyo.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('images/tokyo.jpg')"
+          ></div>
+          <h3>Tokyo</h3>
+          <p>7-10 days</p>
+          <button class="discover-button">Discover Tokyo</button>
+        </a>
+        <a href="/cities/dubai.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('images/dubai.jpg')"
+          ></div>
+          <h3>Dubai</h3>
+          <p>4-6 days</p>
+          <button class="discover-button">Discover Dubai</button>
+        </a>
+        <a href="/cities/istanbul.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('images/istanbul.jpg')"
+          ></div>
+          <h3>Istanbul</h3>
+          <p>4-6 days</p>
+          <button class="discover-button">Discover Istanbul</button>
+        </a>
+        <a href="/cities/singapore.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('images/singapore.jpg')"
+          ></div>
+          <h3>Singapore</h3>
+          <p>3-5 days</p>
+          <button class="discover-button">Discover Singapore</button>
+        </a>
+        <a href="/cities/rome.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('images/rome.jpg')"
+          ></div>
+          <h3>Rome</h3>
+          <p>4-6 days</p>
+          <button class="discover-button">Discover Rome</button>
+        </a>
+        <a href="/cities/barcelona.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('images/barcelona.jpg')"
+          ></div>
+          <h3>Barcelona</h3>
+          <p>4-6 days</p>
+          <button class="discover-button">Discover Barcelona</button>
+        </a>
+        <a href="/cities/sydney.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('images/sydney.jpg')"
+          ></div>
+          <h3>Sydney</h3>
+          <p>5-7 days</p>
+          <button class="discover-button">Discover Sydney</button>
+        </a>
+        <a href="/cities/cape-town.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('images/cape-town.jpg')"
+          ></div>
+          <h3>Cape Town</h3>
+          <p>5-7 days</p>
+          <button class="discover-button">Discover Cape Town</button>
+        </a>
+        <a href="/cities/rio-de-janeiro.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('images/rio-de-janeiro.jpg')"
+          ></div>
+          <h3>Rio de Janeiro</h3>
+          <p>5-7 days</p>
+          <button class="discover-button">Discover Rio de Janeiro</button>
+        </a>
+        <a href="/cities/kyoto.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('images/kyoto.jpg')"
+          ></div>
+          <h3>Kyoto</h3>
+          <p>4-6 days</p>
+          <button class="discover-button">Discover Kyoto</button>
+        </a>
+        <a href="/cities/prague.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('images/prague.jpg')"
+          ></div>
+          <h3>Prague</h3>
+          <p>3-5 days</p>
+          <button class="discover-button">Discover Prague</button>
         </a>
       </div>
-    </section>
-
-    <!-- Dropdown Section -->
-    <section id="start-journey" class="dropdown-section">
-      <h2 class="section-title">Explore More Destinations</h2>
-      <select id="city-selector">
-        <option value="">Select a city...</option>
-        <option value="paris">Paris</option>
-        <option value="london">London</option>
-        <option value="bangkok">Bangkok</option>
-        <option value="new-york">New York</option>
-        <option value="tokyo">Tokyo</option>
-        <option value="dubai">Dubai</option>
-        <option value="istanbul">Istanbul</option>
-        <option value="singapore">Singapore</option>
-        <option value="rome">Rome</option>
-        <option value="barcelona">Barcelona</option>
-        <option value="sydney">Sydney</option>
-        <option value="cape-town">Cape Town</option>
-        <option value="rio-de-janeiro">Rio de Janeiro</option>
-        <option value="kyoto">Kyoto</option>
-        <option value="prague">Prague</option>
-      </select>
     </section>
   </body>
 </html>

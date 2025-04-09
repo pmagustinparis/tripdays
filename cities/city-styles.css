@@ -13,22 +13,55 @@ body {
   line-height: 1.6;
 }
 
-/* Estilos para el header */
-.site-header {
-  padding: 1rem;
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.home-link {
-  font-size: 1.5rem;
+.navbar-logo {
+  font-size: 1.8rem;
   font-weight: 700;
   color: #1a3c5a;
   text-decoration: none;
 }
 
-.home-link:hover {
+.navbar-logo:hover {
   color: #f28c38;
+}
+
+.navbar-menu {
+  position: relative;
+}
+
+.navbar-menu select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 4px;
+  border: 1px solid #1a3c5a;
+  color: #1a3c5a;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.navbar-menu select:focus {
+  outline: none;
+  border-color: #f28c38;
+}
+
+/* Ajustar el contenido para que no quede oculto detrás de la navbar */
+body {
+  padding-top: 80px; /* Espacio para la navbar fija */
 }
 
 /* Estilos para los títulos */
@@ -40,23 +73,23 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
 
 /* Estilos para los párrafos */
 p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
@@ -74,7 +107,7 @@ a:hover {
 /* Sección City Hero */
 .city-hero {
   position: relative;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,51 +136,78 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Capa semitransparente negra */
+  background-color: rgba(0, 0, 0, 0.5); /* Capa semitransparente negra */
   z-index: 2;
 }
 
 .city-hero h1,
 .city-hero p {
   position: relative;
-  z-index: 3; /* Asegurarse de que el texto esté por encima de la superposición */
+  z-index: 3;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.city-hero h1 {
+  font-size: 3.5rem;
+}
+
 .city-hero p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 /* Sección City Content */
 .city-content {
-  max-width: 800px;
-  margin: 2rem auto;
+  max-width: 900px;
+  margin: 3rem auto;
   padding: 0 1rem;
 }
 
 .city-content strong {
   font-weight: 700;
+  color: #1a3c5a;
+}
+
+.itinerary {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.itinerary h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.itinerary ul {
+  list-style: none;
+}
+
+.itinerary li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 /* Sección Local Tips */
 .local-tips {
-  max-width: 800px;
-  margin: 2rem auto;
+  max-width: 900px;
+  margin: 3rem auto;
   padding: 1.5rem;
-  background-color: #ffffff; /* Fondo blanco para destacar */
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .local-tips h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
 
 .local-tips p {
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .local-tips i {
@@ -158,97 +218,162 @@ a:hover {
 
 /* Sección Top Attractions */
 .top-attractions {
-  max-width: 800px;
-  margin: 2rem auto;
+  max-width: 900px;
+  margin: 3rem auto;
   padding: 0 1rem;
 }
 
 .top-attractions h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-.top-attractions ul {
-  list-style: none;
+.attraction-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
 }
 
-.top-attractions li {
+.attraction-image {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+.attraction-content h3 {
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  font-size: 1rem;
 }
 
-.top-attractions strong {
-  color: #1a3c5a;
+.attraction-content p {
+  font-size: 1rem;
+  color: #666;
 }
 
 /* Sección Explore More */
 .explore-more {
-  max-width: 1200px;
-  margin: 2rem auto;
+  max-width: 1400px;
+  margin: 3rem auto;
   padding: 0 1rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
 }
 
 .explore-more h2 {
   text-align: center;
+  margin-bottom: 1rem;
+}
+
+.explore-more .section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
   margin-bottom: 2rem;
 }
 
 .city-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .city-card {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .city-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .city-card .city-image {
   width: 100%;
-  height: 150px;
+  height: 180px;
   background-size: cover;
   background-position: center;
 }
 
-.city-card h3,
-.city-card p {
-  padding: 0.5rem 1rem;
+.city-card h3 {
+  font-size: 1.4rem;
+  padding: 1rem;
   color: #333;
 }
 
-.city-card h3 {
-  font-size: 1.2rem;
+.city-card p {
+  font-size: 1.1rem;
+  padding: 0 1rem;
+  color: #666;
 }
 
-.city-card p {
-  font-size: 0.9rem;
-  color: #666;
+.city-card .discover-button {
+  display: block;
+  width: calc(100% - 2rem);
+  margin: 0 auto 1rem;
+  padding: 0.75rem;
+  background-color: #1a3c5a;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.city-card .discover-button:hover {
+  background-color: #f28c38;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
+  .navbar {
+    padding: 1rem;
   }
 
-  h2 {
+  .navbar-logo {
     font-size: 1.5rem;
   }
 
+  .navbar-menu select {
+    font-size: 0.9rem;
+  }
+
+  body {
+    padding-top: 60px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
   .city-hero {
-    height: 300px;
+    height: 400px;
+  }
+
+  .city-hero h1 {
+    font-size: 2.5rem;
   }
 
   .city-hero p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .city-content,
@@ -264,5 +389,16 @@ a:hover {
 
   .city-card .city-image {
     height: 200px;
+  }
+
+  .attraction-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .attraction-image {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 1rem;
   }
 }

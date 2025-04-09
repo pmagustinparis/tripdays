@@ -40,13 +40,30 @@
     </script>
   </head>
   <body>
-    <header class="site-header">
-      <a href="/index.html" class="home-link">Tripdays</a>
-    </header>
-    <!-- Header con enlace "Home" -->
-    <header class="site-header">
-      <a href="/index.html" class="home-link">Tripdays</a>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="/index.html" class="navbar-logo">Tripdays</a>
+      <div class="navbar-menu">
+        <select onchange="if (this.value) window.location.href=this.value">
+          <option value="">Explore Cities</option>
+          <option value="/cities/paris.html">Paris</option>
+          <option value="/cities/london.html">London</option>
+          <option value="/cities/bangkok.html">Bangkok</option>
+          <option value="/cities/new-york.html">New York</option>
+          <option value="/cities/tokyo.html">Tokyo</option>
+          <option value="/cities/dubai.html">Dubai</option>
+          <option value="/cities/istanbul.html">Istanbul</option>
+          <option value="/cities/singapore.html">Singapore</option>
+          <option value="/cities/rome.html">Rome</option>
+          <option value="/cities/barcelona.html">Barcelona</option>
+          <option value="/cities/sydney.html">Sydney</option>
+          <option value="/cities/cape-town.html">Cape Town</option>
+          <option value="/cities/rio-de-janeiro.html">Rio de Janeiro</option>
+          <option value="/cities/kyoto.html">Kyoto</option>
+          <option value="/cities/prague.html">Prague</option>
+        </select>
+      </div>
+    </nav>
 
     <!-- City Hero Section -->
     <section class="city-hero">
@@ -72,6 +89,23 @@
         a day trip to Stonehenge or Windsor Castle for a deeper dive into
         British history.
       </p>
+      <div class="itinerary">
+        <h3>Suggested Itinerary</h3>
+        <ul>
+          <li>
+            <strong>Day 1:</strong> Visit the British Museum and stroll through
+            Hyde Park.
+          </li>
+          <li>
+            <strong>Day 2:</strong> Explore the Tower of London and see the
+            Crown Jewels.
+          </li>
+          <li>
+            <strong>Day 3:</strong> Catch a show in the West End and dine in
+            Covent Garden.
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Local Tip Section -->
@@ -86,45 +120,45 @@
     <!-- Top Attractions Section -->
     <section class="top-attractions">
       <h2>Top Attractions in London</h2>
-      <ul>
-        <li>
-          <strong>The British Museum</strong>: Explore thousands of years of
-          history with free entry.
-        </li>
-        <li>
-          <strong>Tower of London</strong>: Discover the Crown Jewels and the
-          city’s medieval past.
-        </li>
-        <li>
-          <strong>Hyde Park</strong>: Relax in one of London’s most famous green
-          spaces.
-        </li>
-      </ul>
-    </section>
-
-    <!-- Top Attractions Section -->
-    <section class="top-attractions">
-      <h2>Top Attractions in London</h2>
-      <ul>
-        <li>
-          <strong>The British Museum</strong>: Explore thousands of years of
-          history with free entry.
-        </li>
-        <li>
-          <strong>Tower of London</strong>: Discover the Crown Jewels and the
-          city’s medieval past.
-        </li>
-        <li>
-          <strong>Hyde Park</strong>: Relax in one of London’s most famous green
-          spaces.
-        </li>
-      </ul>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/british-museum.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>The British Museum</h3>
+          <p>Explore thousands of years of history with free entry.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/tower-of-london.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Tower of London</h3>
+          <p>Discover the Crown Jewels and the city’s medieval past.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/hyde-park.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Hyde Park</h3>
+          <p>Relax in one of London’s most famous green spaces.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Explore More Cities Section -->
     <section class="explore-more">
-      <h2>Explore More Cities</h2>
-      <div class="city-grid small">
+      <h2>Keep Exploring</h2>
+      <p class="section-subtitle">
+        Discover more destinations to plan your perfect trip.
+      </p>
+      <div class="city-grid">
         <a href="/cities/paris.html" class="city-card">
           <div
             class="city-image"
@@ -132,6 +166,7 @@
           ></div>
           <h3>Paris</h3>
           <p>4-6 days</p>
+          <button class="discover-button">Discover Paris</button>
         </a>
         <a href="/cities/new-york.html" class="city-card">
           <div
@@ -140,6 +175,7 @@
           ></div>
           <h3>New York</h3>
           <p>5-7 days</p>
+          <button class="discover-button">Discover New York</button>
         </a>
         <a href="/cities/tokyo.html" class="city-card">
           <div
@@ -148,6 +184,7 @@
           ></div>
           <h3>Tokyo</h3>
           <p>7-10 days</p>
+          <button class="discover-button">Discover Tokyo</button>
         </a>
       </div>
     </section>
