@@ -13,7 +13,7 @@
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Plan Your Perfect Istanbul Adventure | Tripdays</title>
+    <title>Plan your perfect Istanbul adventure | Tripdays</title>
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,6 +40,7 @@
     </script>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <a href="/index.html" class="navbar-logo">Tripdays</a>
       <div class="navbar-menu">
@@ -63,89 +64,126 @@
         </select>
       </div>
     </nav>
-    <header class="site-header">
-      <a href="/index.html" class="home-link">Tripdays</a>
-    </header>
+
     <!-- City Hero Section -->
     <section class="city-hero">
       <div
         class="city-image"
         style="background-image: url('../images/istanbul.jpg')"
       ></div>
-      <h1>Plan Your Perfect Istanbul Adventure</h1>
-      <p>Find out how many days to spend in the city where East meets West.</p>
+      <h1>Plan your perfect Istanbul adventure</h1>
+      <p>
+        Find out how many days to spend in this city bridging Europe and Asia.
+      </p>
     </section>
 
     <!-- Main Content -->
     <section class="city-content">
-      <h2>How Many Days to Spend in Istanbul</h2>
+      <h2>How many days to spend in Istanbul</h2>
       <p>
-        Istanbul, a city bridging two continents, is rich in history and
-        culture. We recommend spending <strong>4-6 days</strong> to explore its
-        wonders.
+        Istanbul, a city where East meets West, offers a rich blend of history
+        and culture. To fully experience Istanbul, we recommend spending
+        <strong>4-6 days</strong>.
       </p>
       <p>
-        In 4-6 days, you can visit the Hagia Sophia, explore the Grand Bazaar,
-        cruise the Bosphorus, and wander through the Sultanahmet district. Add a
-        day for a trip to the Asian side or the Prince Islands.
+        With 4-6 days, you can visit the Hagia Sophia, explore the Grand Bazaar,
+        take a Bosphorus cruise, and wander through the historic Sultanahmet
+        district. Add a day to explore the Asian side for a complete experience.
       </p>
-    </section>
-
-    <!-- Local Tip Section -->
-    <section class="local-tips">
-      <h2>Local Tip</h2>
-      <p>
-        <i class="fas fa-lightbulb"></i> Take a ferry to the Prince Islands for
-        a peaceful escape from the city.
-      </p>
+      <div class="itinerary">
+        <h3>Suggested Itinerary</h3>
+        <ul>
+          <li>
+            <strong>Day 1:</strong> Visit the Hagia Sophia and Blue Mosque.
+          </li>
+          <li>
+            <strong>Day 2:</strong> Explore the Grand Bazaar and Spice Market.
+          </li>
+          <li>
+            <strong>Day 3:</strong> Take a Bosphorus cruise and visit Dolmabahçe
+            Palace.
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Top Attractions Section -->
     <section class="top-attractions">
-      <h2>Top Attractions in Istanbul</h2>
-      <ul>
-        <li>
-          <strong>Hagia Sophia</strong>: Admire the stunning architecture of
-          this historic mosque.
-        </li>
-        <li>
-          <strong>Topkapi Palace</strong>: Explore the opulent residence of
-          Ottoman sultans.
-        </li>
-        <li>
-          <strong>Grand Bazaar</strong>: Shop for spices, textiles, and
-          souvenirs in this vibrant market.
-        </li>
-      </ul>
+      <h2>Top attractions in Istanbul</h2>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/hagia-sophia.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Hagia Sophia</h3>
+          <p>Marvel at this architectural masterpiece with a rich history.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/grand-bazaar.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Grand Bazaar</h3>
+          <p>Shop for souvenirs in one of the world’s oldest markets.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/bosphorus.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Bosphorus Cruise</h3>
+          <p>Enjoy stunning views of Istanbul from the water.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Local Tip Section -->
+    <section class="local-tips">
+      <h2>Local tip</h2>
+      <p>
+        <i class="fas fa-lightbulb"></i> Try Turkish tea or coffee at a local
+        café for an authentic taste of Istanbul.
+      </p>
     </section>
 
     <!-- Explore More Cities Section -->
     <section class="explore-more">
-      <h2>Explore More Cities</h2>
-      <div class="city-grid small">
-        <a href="/cities/paris.html" class="city-card">
+      <h2>Keep exploring</h2>
+      <p class="section-subtitle">
+        Discover more destinations to plan your perfect trip.
+      </p>
+      <div class="city-grid">
+        <a href="/cities/dubai.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/paris.jpg')"
+            style="background-image: url('../images/dubai.jpg')"
           ></div>
-          <h3>Paris</h3>
-          <p>4-6 days</p>
+          <h3>Dubai</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Dubai</button>
         </a>
-        <a href="/cities/london.html" class="city-card">
+        <a href="/cities/singapore.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/london.jpg')"
+            style="background-image: url('../images/singapore.jpg')"
           ></div>
-          <h3>London</h3>
-          <p>5-7 days</p>
+          <h3>Singapore</h3>
+          <p><span class="days-badge">3-5 days</span></p>
+          <button class="discover-button">Discover Singapore</button>
         </a>
-        <a href="/cities/tokyo.html" class="city-card">
+        <a href="/cities/rome.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/tokyo.jpg')"
+            style="background-image: url('../images/rome.jpg')"
           ></div>
-          <h3>Tokyo</h3>
-          <p>7-10 days</p>
+          <h3>Rome</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Rome</button>
         </a>
       </div>
     </section>

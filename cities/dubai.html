@@ -13,7 +13,7 @@
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Plan Your Perfect Dubai Adventure | Tripdays</title>
+    <title>Plan your perfect Dubai adventure | Tripdays</title>
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,6 +40,7 @@
     </script>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <a href="/index.html" class="navbar-logo">Tripdays</a>
       <div class="navbar-menu">
@@ -63,90 +64,126 @@
         </select>
       </div>
     </nav>
-    <header class="site-header">
-      <a href="/index.html" class="home-link">Tripdays</a>
-    </header>
+
     <!-- City Hero Section -->
     <section class="city-hero">
       <div
         class="city-image"
         style="background-image: url('../images/dubai.jpg')"
       ></div>
-      <h1>Plan Your Perfect Dubai Adventure</h1>
-      <p>
-        Find out how many days to spend in the city of luxury and innovation.
-      </p>
+      <h1>Plan your perfect Dubai adventure</h1>
+      <p>Find out how many days to spend in the UAE’s city of luxury.</p>
     </section>
 
     <!-- Main Content -->
     <section class="city-content">
-      <h2>How Many Days to Spend in Dubai</h2>
+      <h2>How many days to spend in Dubai</h2>
       <p>
-        Dubai, a city of towering skyscrapers and desert adventures, offers a
-        mix of modernity and tradition. We recommend spending
-        <strong>4-6 days</strong>.
+        Dubai, a city of opulence and innovation, offers a mix of modern wonders
+        and cultural experiences. To fully experience Dubai, we recommend
+        spending <strong>4-6 days</strong>.
       </p>
       <p>
-        In 4-6 days, you can visit the Burj Khalifa, explore the Dubai Mall,
-        take a desert safari, and stroll through the Gold Souk. Add a day for a
-        trip to Abu Dhabi to see the Sheikh Zayed Grand Mosque.
+        With 4-6 days, you can visit the Burj Khalifa, explore the Dubai Mall,
+        take a desert safari, and relax on Jumeirah Beach. Add a day to visit
+        the old town of Deira for a taste of traditional Dubai.
       </p>
+      <div class="itinerary">
+        <h3>Suggested Itinerary</h3>
+        <ul>
+          <li>
+            <strong>Day 1:</strong> Visit the Burj Khalifa and explore the Dubai
+            Mall.
+          </li>
+          <li>
+            <strong>Day 2:</strong> Take a desert safari with dune bashing and
+            dinner.
+          </li>
+          <li>
+            <strong>Day 3:</strong> Relax on Jumeirah Beach and visit the Palm
+            Jumeirah.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Top Attractions Section -->
+    <section class="top-attractions">
+      <h2>Top attractions in Dubai</h2>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/burj-khalifa.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Burj Khalifa</h3>
+          <p>Visit the world’s tallest building for breathtaking views.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/dubai-mall.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Dubai Mall</h3>
+          <p>Shop and explore the aquarium in this massive mall.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/palm-jumeirah.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Palm Jumeirah</h3>
+          <p>Discover this man-made island with luxury resorts.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Local Tip Section -->
     <section class="local-tips">
-      <h2>Local Tip</h2>
+      <h2>Local tip</h2>
       <p>
-        <i class="fas fa-lightbulb"></i> Visit the Dubai Frame at sunset for a
-        magical view of both old and new Dubai.
+        <i class="fas fa-lightbulb"></i> Visit the Dubai Fountain show in the
+        evening for a mesmerizing display of water and lights.
       </p>
-    </section>
-    <!-- Top Attractions Section -->
-    <section class="top-attractions">
-      <h2>Top Attractions in Dubai</h2>
-      <ul>
-        <li>
-          <strong>Burj Khalifa</strong>: Visit the tallest building in the world
-          for stunning views.
-        </li>
-        <li>
-          <strong>Dubai Mall</strong>: Shop and explore the aquarium in this
-          massive mall.
-        </li>
-        <li>
-          <strong>Desert Safari</strong>: Experience dune bashing and a
-          traditional Bedouin camp.
-        </li>
-      </ul>
     </section>
 
     <!-- Explore More Cities Section -->
     <section class="explore-more">
-      <h2>Explore More Cities</h2>
-      <div class="city-grid small">
-        <a href="/cities/paris.html" class="city-card">
+      <h2>Keep exploring</h2>
+      <p class="section-subtitle">
+        Discover more destinations to plan your perfect trip.
+      </p>
+      <div class="city-grid">
+        <a href="/cities/istanbul.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/paris.jpg')"
+            style="background-image: url('../images/istanbul.jpg')"
           ></div>
-          <h3>Paris</h3>
-          <p>4-6 days</p>
+          <h3>Istanbul</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Istanbul</button>
         </a>
-        <a href="/cities/london.html" class="city-card">
+        <a href="/cities/singapore.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/london.jpg')"
+            style="background-image: url('../images/singapore.jpg')"
           ></div>
-          <h3>London</h3>
-          <p>5-7 days</p>
+          <h3>Singapore</h3>
+          <p><span class="days-badge">3-5 days</span></p>
+          <button class="discover-button">Discover Singapore</button>
         </a>
-        <a href="/cities/tokyo.html" class="city-card">
+        <a href="/cities/rome.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/tokyo.jpg')"
+            style="background-image: url('../images/rome.jpg')"
           ></div>
-          <h3>Tokyo</h3>
-          <p>7-10 days</p>
+          <h3>Rome</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Rome</button>
         </a>
       </div>
     </section>

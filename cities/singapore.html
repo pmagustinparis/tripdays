@@ -13,7 +13,7 @@
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Plan Your Perfect Singapore Adventure | Tripdays</title>
+    <title>Plan your perfect Singapore adventure | Tripdays</title>
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,6 +40,7 @@
     </script>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <a href="/index.html" class="navbar-logo">Tripdays</a>
       <div class="navbar-menu">
@@ -63,89 +64,123 @@
         </select>
       </div>
     </nav>
-    <header class="site-header">
-      <a href="/index.html" class="home-link">Tripdays</a>
-    </header>
+
     <!-- City Hero Section -->
     <section class="city-hero">
       <div
         class="city-image"
         style="background-image: url('../images/singapore.jpg')"
       ></div>
-      <h1>Plan Your Perfect Singapore Adventure</h1>
-      <p>Find out how many days to spend in the Lion City.</p>
+      <h1>Plan your perfect Singapore adventure</h1>
+      <p>Find out how many days to spend in this modern city-state.</p>
     </section>
 
     <!-- Main Content -->
     <section class="city-content">
-      <h2>How Many Days to Spend in Singapore</h2>
+      <h2>How many days to spend in Singapore</h2>
       <p>
-        Singapore, a modern city-state, blends futuristic architecture with lush
-        greenery. We recommend spending <strong>3-5 days</strong> to explore its
-        highlights.
+        Singapore, a futuristic city-state, blends culture, nature, and
+        innovation. To fully experience Singapore, we recommend spending
+        <strong>3-5 days</strong>.
       </p>
       <p>
-        In 3-5 days, you can visit Marina Bay Sands, explore Gardens by the Bay,
-        stroll through Chinatown, and enjoy Sentosa Island. Add a day for a food
-        tour or a visit to the Night Safari.
+        With 3-5 days, you can visit Marina Bay Sands, explore Gardens by the
+        Bay, stroll through Chinatown, and enjoy Sentosa Island. This duration
+        allows you to experience the city’s highlights without feeling rushed.
       </p>
-    </section>
-
-    <!-- Local Tip Section -->
-    <section class="local-tips">
-      <h2>Local Tip</h2>
-      <p>
-        <i class="fas fa-lightbulb"></i> Visit Gardens by the Bay at night to
-        see the Supertree Grove light show.
-      </p>
+      <div class="itinerary">
+        <h3>Suggested Itinerary</h3>
+        <ul>
+          <li>
+            <strong>Day 1:</strong> Visit Marina Bay Sands and Gardens by the
+            Bay.
+          </li>
+          <li><strong>Day 2:</strong> Explore Chinatown and Little India.</li>
+          <li>
+            <strong>Day 3:</strong> Spend a day at Sentosa Island for fun and
+            relaxation.
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Top Attractions Section -->
     <section class="top-attractions">
-      <h2>Top Attractions in Singapore</h2>
-      <ul>
-        <li>
-          <strong>Marina Bay Sands</strong>: Enjoy the infinity pool and views
-          of the skyline.
-        </li>
-        <li>
-          <strong>Gardens by the Bay</strong>: Marvel at the Supertree Grove and
-          Flower Dome.
-        </li>
-        <li>
-          <strong>Sentosa Island</strong>: Relax on the beach or visit Universal
-          Studios.
-        </li>
-      </ul>
+      <h2>Top attractions in Singapore</h2>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/marina-bay-sands.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Marina Bay Sands</h3>
+          <p>Enjoy the infinity pool and stunning city views.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/gardens-by-the-bay.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Gardens by the Bay</h3>
+          <p>Explore the Supertree Grove and Flower Dome.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/sentosa-island.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Sentosa Island</h3>
+          <p>Relax on the beach or visit Universal Studios.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Local Tip Section -->
+    <section class="local-tips">
+      <h2>Local tip</h2>
+      <p>
+        <i class="fas fa-lightbulb"></i> Try a hawker center meal at Lau Pa Sat
+        for affordable and delicious local dishes.
+      </p>
     </section>
 
     <!-- Explore More Cities Section -->
     <section class="explore-more">
-      <h2>Explore More Cities</h2>
-      <div class="city-grid small">
-        <a href="/cities/paris.html" class="city-card">
+      <h2>Keep exploring</h2>
+      <p class="section-subtitle">
+        Discover more destinations to plan your perfect trip.
+      </p>
+      <div class="city-grid">
+        <a href="/cities/dubai.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/paris.jpg')"
+            style="background-image: url('../images/dubai.jpg')"
           ></div>
-          <h3>Paris</h3>
-          <p>4-6 days</p>
+          <h3>Dubai</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Dubai</button>
         </a>
-        <a href="/cities/london.html" class="city-card">
+        <a href="/cities/istanbul.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/london.jpg')"
+            style="background-image: url('../images/istanbul.jpg')"
           ></div>
-          <h3>London</h3>
-          <p>5-7 days</p>
+          <h3>Istanbul</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Istanbul</button>
         </a>
-        <a href="/cities/tokyo.html" class="city-card">
+        <a href="/cities/rome.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/tokyo.jpg')"
+            style="background-image: url('../images/rome.jpg')"
           ></div>
-          <h3>Tokyo</h3>
-          <p>7-10 days</p>
+          <h3>Rome</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Rome</button>
         </a>
       </div>
     </section>

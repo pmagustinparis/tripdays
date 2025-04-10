@@ -13,7 +13,7 @@
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Plan Your Perfect Tokyo Adventure | Tripdays</title>
+    <title>Plan your perfect Tokyo adventure | Tripdays</title>
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,6 +40,7 @@
     </script>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <a href="/index.html" class="navbar-logo">Tripdays</a>
       <div class="navbar-menu">
@@ -63,73 +64,105 @@
         </select>
       </div>
     </nav>
-    <header class="site-header">
-      <a href="/index.html" class="home-link">Tripdays</a>
-    </header>
+
     <!-- City Hero Section -->
     <section class="city-hero">
       <div
         class="city-image"
         style="background-image: url('../images/tokyo.jpg')"
       ></div>
-      <h1>Plan Your Perfect Tokyo Adventure</h1>
-      <p>Find out how many days to spend in Japan's vibrant capital.</p>
+      <h1>Plan your perfect Tokyo adventure</h1>
+      <p>Find out how many days to spend in Japan’s bustling capital.</p>
     </section>
 
     <!-- Main Content -->
     <section class="city-content">
-      <h2>How Many Days to Spend in Tokyo</h2>
+      <h2>How many days to spend in Tokyo</h2>
       <p>
-        Tokyo, a city where tradition meets innovation, offers a unique blend of
-        experiences. We recommend spending <strong>7-10 days</strong> to fully
-        immerse yourself.
+        Tokyo, a city of contrasts, blends tradition with modernity. To fully
+        experience its vibrant culture, we recommend spending
+        <strong>7-10 days</strong>.
       </p>
       <p>
-        In 7-10 days, you can explore Shibuya Crossing, visit Senso-ji Temple,
-        shop in Ginza, and experience a traditional tea ceremony. Add a day trip
-        to Nikko or Hakone for a taste of Japan's natural beauty.
+        With 7-10 days, you can visit Senso-ji Temple, explore Shibuya and
+        Shinjuku, take a day trip to Mount Fuji, and immerse yourself in Tokyo’s
+        unique neighborhoods like Akihabara and Harajuku.
       </p>
-    </section>
-
-    <!-- Local Tip Section -->
-    <section class="local-tips">
-      <h2>Local Tip</h2>
-      <p>
-        <i class="fas fa-lightbulb"></i> Explore the narrow alleys of Dotonbori
-        in Shinjuku for hidden izakayas and local vibes.
-      </p>
+      <div class="itinerary">
+        <h3>Suggested Itinerary</h3>
+        <ul>
+          <li>
+            <strong>Day 1:</strong> Experience Shibuya Crossing and visit
+            Senso-ji Temple.
+          </li>
+          <li>
+            <strong>Day 2:</strong> Explore Tokyo Skytree and the Akihabara
+            district.
+          </li>
+          <li><strong>Day 3:</strong> Take a day trip to Mount Fuji.</li>
+        </ul>
+      </div>
     </section>
 
     <!-- Top Attractions Section -->
     <section class="top-attractions">
-      <h2>Top Attractions in Tokyo</h2>
-      <ul>
-        <li>
-          <strong>Shibuya Crossing</strong>: Witness the world’s busiest
-          pedestrian crossing.
-        </li>
-        <li>
-          <strong>Senso-ji Temple</strong>: Explore Tokyo’s oldest temple in
-          Asakusa.
-        </li>
-        <li>
-          <strong>Tokyo Skytree</strong>: Enjoy panoramic views from this
-          towering landmark.
-        </li>
-      </ul>
+      <h2>Top attractions in Tokyo</h2>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/shibuya-crossing.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Shibuya Crossing</h3>
+          <p>Witness the world’s busiest pedestrian crossing.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/senso-ji-temple.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Senso-ji Temple</h3>
+          <p>Explore Tokyo’s oldest temple in Asakusa.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/tokyo-skytree.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Tokyo Skytree</h3>
+          <p>Enjoy panoramic views from this towering landmark.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Local Tip Section -->
+    <section class="local-tips">
+      <h2>Local tip</h2>
+      <p>
+        <i class="fas fa-lightbulb"></i> Try a sushi breakfast at Tsukiji Outer
+        Market for a fresh and authentic experience.
+      </p>
     </section>
 
     <!-- Explore More Cities Section -->
     <section class="explore-more">
-      <h2>Explore More Cities</h2>
-      <div class="city-grid small">
+      <h2>Keep exploring</h2>
+      <p class="section-subtitle">
+        Discover more destinations to plan your perfect trip.
+      </p>
+      <div class="city-grid">
         <a href="/cities/paris.html" class="city-card">
           <div
             class="city-image"
             style="background-image: url('../images/paris.jpg')"
           ></div>
           <h3>Paris</h3>
-          <p>4-6 days</p>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Paris</button>
         </a>
         <a href="/cities/london.html" class="city-card">
           <div
@@ -137,7 +170,8 @@
             style="background-image: url('../images/london.jpg')"
           ></div>
           <h3>London</h3>
-          <p>5-7 days</p>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover London</button>
         </a>
         <a href="/cities/new-york.html" class="city-card">
           <div
@@ -145,7 +179,8 @@
             style="background-image: url('../images/new-york.jpg')"
           ></div>
           <h3>New York</h3>
-          <p>5-7 days</p>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover New York</button>
         </a>
       </div>
     </section>

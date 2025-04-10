@@ -13,7 +13,7 @@
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Plan Your Perfect New York Adventure | Tripdays</title>
+    <title>Plan your perfect New York adventure | Tripdays</title>
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,6 +40,7 @@
     </script>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <a href="/index.html" class="navbar-logo">Tripdays</a>
       <div class="navbar-menu">
@@ -63,72 +64,107 @@
         </select>
       </div>
     </nav>
-    <header class="site-header">
-      <a href="/index.html" class="home-link">Tripdays</a>
-    </header>
+
     <!-- City Hero Section -->
     <section class="city-hero">
       <div
         class="city-image"
         style="background-image: url('../images/new-york.jpg')"
       ></div>
-      <h1>Plan Your Perfect New York Adventure</h1>
+      <h1>Plan your perfect New York adventure</h1>
       <p>Find out how many days to spend in the city that never sleeps.</p>
     </section>
 
     <!-- Main Content -->
     <section class="city-content">
-      <h2>How Many Days to Spend in New York</h2>
+      <h2>How many days to spend in New York</h2>
       <p>
-        New York City, a global hub of culture and energy, has something for
-        everyone. We recommend spending <strong>5-7 days</strong> to explore its
-        highlights.
+        New York City, with its iconic skyline and endless attractions, offers
+        something for everyone. To fully experience NYC, we recommend spending
+        <strong>5-7 days</strong>.
       </p>
       <p>
-        In 5-7 days, you can visit the Statue of Liberty, explore Times Square,
-        walk through Central Park, and catch a Broadway show. Add a day for a
-        trip to Brooklyn or the Metropolitan Museum of Art.
+        With 5-7 days, you can visit the Statue of Liberty, explore Central
+        Park, catch a Broadway show, and take in the views from the Empire State
+        Building. Add a day to explore Brooklyn or the MET for a deeper dive.
       </p>
+      <div class="itinerary">
+        <h3>Suggested Itinerary</h3>
+        <ul>
+          <li>
+            <strong>Day 1:</strong> Visit the Statue of Liberty and explore
+            Lower Manhattan.
+          </li>
+          <li>
+            <strong>Day 2:</strong> Walk through Central Park and visit Times
+            Square.
+          </li>
+          <li>
+            <strong>Day 3:</strong> Explore the Metropolitan Museum of Art.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Top Attractions Section -->
+    <section class="top-attractions">
+      <h2>Top attractions in New York</h2>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/statue-of-liberty.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Statue of Liberty</h3>
+          <p>Take a ferry to this iconic symbol of freedom.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/times-square.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Times Square</h3>
+          <p>Experience the vibrant energy of this famous square.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/central-park.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Central Park</h3>
+          <p>Enjoy a walk or picnic in this urban oasis.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Local Tip Section -->
     <section class="local-tips">
-      <h2>Local Tip</h2>
+      <h2>Local tip</h2>
       <p>
-        <i class="fas fa-lightbulb"></i> Visit the High Line early in the
-        morning to enjoy the views without the crowds.
+        <i class="fas fa-lightbulb"></i> Grab a slice of pizza from a local deli
+        for a quick and authentic New York meal.
       </p>
-    </section>
-    <!-- Top Attractions Section -->
-    <section class="top-attractions">
-      <h2>Top Attractions in New York</h2>
-      <ul>
-        <li>
-          <strong>Statue of Liberty</strong>: Take a ferry to this iconic symbol
-          of freedom.
-        </li>
-        <li>
-          <strong>Times Square</strong>: Experience the vibrant energy of this
-          famous square.
-        </li>
-        <li>
-          <strong>Central Park</strong>: Enjoy a walk or picnic in this urban
-          oasis.
-        </li>
-      </ul>
     </section>
 
     <!-- Explore More Cities Section -->
     <section class="explore-more">
-      <h2>Explore More Cities</h2>
-      <div class="city-grid small">
+      <h2>Keep exploring</h2>
+      <p class="section-subtitle">
+        Discover more destinations to plan your perfect trip.
+      </p>
+      <div class="city-grid">
         <a href="/cities/paris.html" class="city-card">
           <div
             class="city-image"
             style="background-image: url('../images/paris.jpg')"
           ></div>
           <h3>Paris</h3>
-          <p>4-6 days</p>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Paris</button>
         </a>
         <a href="/cities/london.html" class="city-card">
           <div
@@ -136,7 +172,8 @@
             style="background-image: url('../images/london.jpg')"
           ></div>
           <h3>London</h3>
-          <p>5-7 days</p>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover London</button>
         </a>
         <a href="/cities/tokyo.html" class="city-card">
           <div
@@ -144,7 +181,8 @@
             style="background-image: url('../images/tokyo.jpg')"
           ></div>
           <h3>Tokyo</h3>
-          <p>7-10 days</p>
+          <p><span class="days-badge">7-10 days</span></p>
+          <button class="discover-button">Discover Tokyo</button>
         </a>
       </div>
     </section>

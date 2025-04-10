@@ -1,110 +1,53 @@
-/* Reset básico para márgenes y padding */
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilos generales */
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f5f5f5; /* Fondo claro */
-  color: #333;
   line-height: 1.6;
+  color: #333;
 }
 
-/* Navbar */
+/* Navbar Styles */
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 30px;
+  z-index: 1000;
 }
 
 .navbar-logo {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #1a3c5a;
   text-decoration: none;
-}
-
-.navbar-logo:hover {
-  color: #f28c38;
-}
-
-.navbar-menu {
-  position: relative;
 }
 
 .navbar-menu select {
-  padding: 0.5rem;
+  padding: 10px;
   font-size: 1rem;
-  font-family: "Poppins", sans-serif;
-  border-radius: 4px;
-  border: 1px solid #1a3c5a;
-  color: #1a3c5a;
-  background-color: #ffffff;
+  border: 2px solid #1a3c5a;
+  border-radius: 5px;
+  background-color: #1a3c5a;
+  color: #fff;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.navbar-menu select:focus {
-  outline: none;
-  border-color: #f28c38;
+.navbar-menu select:hover {
+  background-color: #2a5c8a;
 }
 
-/* Ajustar el contenido para que no quede oculto detrás de la navbar */
-body {
-  padding-top: 80px; /* Espacio para la navbar fija */
-}
-
-/* Estilos para los títulos */
-h1,
-h2,
-h3 {
-  color: #1a3c5a; /* Azul oscuro */
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Estilos para los párrafos */
-p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-}
-
-/* Estilos para los enlaces */
-a {
-  color: #1a3c5a; /* Azul oscuro */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #f28c38; /* Naranja al pasar el mouse */
-}
-
-/* Sección City Hero */
+/* City Hero Section */
 .city-hero {
   position: relative;
   height: 500px;
@@ -113,11 +56,11 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
-  background-color: #1a3c5a; /* Color de respaldo por si la imagen no carga */
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
-.city-hero .city-image {
+.city-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -125,59 +68,51 @@ a:hover {
   height: 100%;
   background-size: cover;
   background-position: center;
-  opacity: 0.7;
-  z-index: 1;
-}
-
-.city-hero .city-image::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Capa semitransparente negra */
-  z-index: 2;
-}
-
-.city-hero h1,
-.city-hero p {
-  position: relative;
-  z-index: 3;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 .city-hero h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #fff;
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .city-hero p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
-/* Sección City Content */
+/* Main Content */
 .city-content {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 0 1rem;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 
-.city-content strong {
-  font-weight: 700;
-  color: #1a3c5a;
+.city-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
+.city-content p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Itinerary Styles */
 .itinerary {
-  margin-top: 1rem;
-  padding: 1rem;
-  background-color: #ffffff;
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .itinerary h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #1a3c5a;
 }
 
 .itinerary ul {
@@ -185,72 +120,52 @@ a:hover {
 }
 
 .itinerary li {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-}
-
-/* Sección Local Tips */
-.local-tips {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 1.5rem;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.local-tips h2 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-}
-
-.local-tips p {
-  display: flex;
-  align-items: center;
   font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
-.local-tips i {
-  margin-right: 0.5rem;
-  color: #f28c38; /* Naranja para el ícono */
-  font-size: 1.2rem;
+.itinerary li strong {
+  color: #1a3c5a;
 }
 
-/* Sección Top Attractions */
+/* Top Attractions Section */
 .top-attractions {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 0 1rem;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 
 .top-attractions h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .attraction-item {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
-  background-color: #ffffff;
+  margin-bottom: 30px;
+  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .attraction-image {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-size: cover;
   background-position: center;
-  border-radius: 4px;
-  margin-right: 1rem;
+}
+
+.attraction-content {
+  padding: 20px;
+  flex: 1;
 }
 
 .attraction-content h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #1a3c5a;
 }
 
 .attraction-content p {
@@ -258,147 +173,153 @@ a:hover {
   color: #666;
 }
 
-/* Sección Explore More */
+/* Local Tips Section */
+.local-tips {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f0f8ff;
+  border-left: 5px solid #1a3c5a;
+  border-radius: 5px;
+}
+
+.local-tips h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.local-tips p {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.local-tips i {
+  margin-right: 10px;
+  color: #1a3c5a;
+}
+
+/* Explore More Cities Section */
 .explore-more {
-  max-width: 1400px;
-  margin: 3rem auto;
-  padding: 0 1rem;
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 8px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .explore-more h2 {
-  text-align: center;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
-.explore-more .section-subtitle {
-  text-align: center;
+.section-subtitle {
   font-size: 1.2rem;
   color: #666;
-  margin-bottom: 2rem;
+  margin-bottom: 30px;
 }
 
 .city-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .city-card {
   position: relative;
-  overflow: hidden;
+  text-decoration: none;
+  color: #333;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .city-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
 }
 
-.city-card .city-image {
+.city-image {
   width: 100%;
-  height: 180px;
+  height: 200px;
   background-size: cover;
   background-position: center;
 }
 
 .city-card h3 {
-  font-size: 1.4rem;
-  padding: 1rem;
-  color: #333;
+  font-size: 1.3rem;
+  margin: 15px 0 5px;
+  text-align: center;
 }
 
 .city-card p {
-  font-size: 1.1rem;
-  padding: 0 1rem;
+  font-size: 1rem;
   color: #666;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-.city-card .discover-button {
-  display: block;
-  width: calc(100% - 2rem);
-  margin: 0 auto 1rem;
-  padding: 0.75rem;
+.days-badge {
+  display: inline-block;
   background-color: #1a3c5a;
-  color: white;
-  font-size: 1rem;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
   font-weight: 500;
-  text-align: center;
+}
+
+.discover-button {
+  display: block;
+  margin: 0 auto 15px;
+  padding: 10px 20px;
+  background-color: #1a3c5a;
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.city-card .discover-button:hover {
-  background-color: #f28c38;
+.discover-button:hover {
+  background-color: #2a5c8a;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .navbar {
-    padding: 1rem;
-  }
-
-  .navbar-logo {
-    font-size: 1.5rem;
-  }
-
-  .navbar-menu select {
-    font-size: 0.9rem;
-  }
-
-  body {
-    padding-top: 60px;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
   .city-hero {
     height: 400px;
   }
 
   .city-hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .city-hero p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
-  .city-content,
-  .local-tips,
-  .explore-more,
-  .top-attractions {
-    padding: 0 0.5rem;
-  }
-
-  .city-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .city-card .city-image {
-    height: 200px;
+  .city-content h2,
+  .top-attractions h2,
+  .local-tips h2,
+  .explore-more h2 {
+    font-size: 1.5rem;
   }
 
   .attraction-item {
     flex-direction: column;
-    align-items: flex-start;
+    text-align: center;
   }
 
   .attraction-image {
     width: 100%;
-    height: 150px;
-    margin-bottom: 1rem;
+    height: 200px;
+  }
+
+  .city-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .city-card p {
+    font-size: 0.9rem;
   }
 }

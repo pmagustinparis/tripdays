@@ -13,7 +13,7 @@
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Plan Your Perfect Kyoto Adventure | Tripdays</title>
+    <title>Plan your perfect Kyoto adventure | Tripdays</title>
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,6 +40,7 @@
     </script>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <a href="/index.html" class="navbar-logo">Tripdays</a>
       <div class="navbar-menu">
@@ -63,87 +64,128 @@
         </select>
       </div>
     </nav>
-    <header class="site-header">
-      <a href="/index.html" class="home-link">Tripdays</a>
-    </header>
+
     <!-- City Hero Section -->
     <section class="city-hero">
       <div
         class="city-image"
         style="background-image: url('../images/kyoto.jpg')"
       ></div>
-      <h1>Plan Your Perfect Kyoto Adventure</h1>
-      <p>Find out how many days to spend in Japan's cultural heart.</p>
+      <h1>Plan your perfect Kyoto adventure</h1>
+      <p>Find out how many days to spend in Japan’s cultural heart.</p>
     </section>
 
     <!-- Main Content -->
     <section class="city-content">
-      <h2>How Many Days to Spend in Kyoto</h2>
+      <h2>How many days to spend in Kyoto</h2>
       <p>
-        Kyoto, a city of temples and traditions, offers a glimpse into Japan's
-        past. We recommend spending <strong>3-5 days</strong> to soak in its
-        charm.
+        Kyoto, the cultural heart of Japan, is known for its temples, gardens,
+        and traditions. To fully experience Kyoto, we recommend spending
+        <strong>4-6 days</strong>.
       </p>
       <p>
-        In 3-5 days, you can visit Fushimi Inari Shrine, explore Kinkaku-ji
-        (Golden Pavilion), stroll through Arashiyama Bamboo Grove, and
-        experience a tea ceremony. Add a day for a trip to Nara or Uji.
+        With 4-6 days, you can visit Fushimi Inari Shrine, explore the
+        Arashiyama Bamboo Grove, see Kinkaku-ji (Golden Pavilion), and stroll
+        through the historic Gion district. Add a day to experience a
+        traditional tea ceremony or visit nearby Nara.
       </p>
+      <div class="itinerary">
+        <h3>Suggested Itinerary</h3>
+        <ul>
+          <li>
+            <strong>Day 1:</strong> Visit Fushimi Inari Shrine and its thousands
+            of torii gates.
+          </li>
+          <li>
+            <strong>Day 2:</strong> Explore the Arashiyama Bamboo Grove and
+            nearby temples.
+          </li>
+          <li>
+            <strong>Day 3:</strong> See Kinkaku-ji and stroll through Gion.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Top Attractions Section -->
+    <section class="top-attractions">
+      <h2>Top attractions in Kyoto</h2>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/fushimi-inari.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Fushimi Inari Shrine</h3>
+          <p>
+            Walk through thousands of red torii gates at this iconic shrine.
+          </p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/arashiyama-bamboo-grove.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Arashiyama Bamboo Grove</h3>
+          <p>Stroll through this serene bamboo forest.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/kinkaku-ji.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Kinkaku-ji (Golden Pavilion)</h3>
+          <p>Admire this stunning gold-covered temple.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Local Tip Section -->
     <section class="local-tips">
-      <h2>Local Tip</h2>
+      <h2>Local tip</h2>
       <p>
-        <i class="fas fa-lightbulb"></i> Rent a kimono and stroll through Gion
-        to experience Kyoto’s traditional charm.
+        <i class="fas fa-lightbulb"></i> Visit Gion in the evening to spot a
+        geisha on her way to an appointment.
       </p>
     </section>
-    <!-- Top Attractions Section -->
-    <section class="top-attractions">
-      <h2>Top Attractions in Kyoto</h2>
-      <ul>
-        <li>
-          <strong>Fushimi Inari Shrine</strong>: Walk through thousands of red
-          torii gates.
-        </li>
-        <li>
-          <strong>Kinkaku-ji</strong>: Admire the Golden Pavilion surrounded by
-          a serene pond.
-        </li>
-        <li>
-          <strong>Arashiyama Bamboo Grove</strong>: Stroll through this
-          enchanting bamboo forest.
-        </li>
-      </ul>
-    </section>
+
     <!-- Explore More Cities Section -->
     <section class="explore-more">
-      <h2>Explore More Cities</h2>
-      <div class="city-grid small">
-        <a href="/cities/paris.html" class="city-card">
+      <h2>Keep exploring</h2>
+      <p class="section-subtitle">
+        Discover more destinations to plan your perfect trip.
+      </p>
+      <div class="city-grid">
+        <a href="/cities/sydney.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/paris.jpg')"
+            style="background-image: url('../images/sydney.jpg')"
           ></div>
-          <h3>Paris</h3>
-          <p>4-6 days</p>
+          <h3>Sydney</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Sydney</button>
         </a>
-        <a href="/cities/london.html" class="city-card">
+        <a href="/cities/cape-town.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/london.jpg')"
+            style="background-image: url('../images/cape-town.jpg')"
           ></div>
-          <h3>London</h3>
-          <p>5-7 days</p>
+          <h3>Cape Town</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Cape Town</button>
         </a>
-        <a href="/cities/tokyo.html" class="city-card">
+        <a href="/cities/rio-de-janeiro.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/tokyo.jpg')"
+            style="background-image: url('../images/rio-de-janeiro.jpg')"
           ></div>
-          <h3>Tokyo</h3>
-          <p>7-10 days</p>
+          <h3>Rio de Janeiro</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Rio de Janeiro</button>
         </a>
       </div>
     </section>

@@ -13,7 +13,7 @@
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Plan Your Perfect Cape Town Adventure | Tripdays</title>
+    <title>Plan your perfect Cape Town adventure | Tripdays</title>
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,6 +40,7 @@
     </script>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <a href="/index.html" class="navbar-logo">Tripdays</a>
       <div class="navbar-menu">
@@ -63,90 +64,128 @@
         </select>
       </div>
     </nav>
-    <header class="site-header">
-      <a href="/index.html" class="home-link">Tripdays</a>
-    </header>
+
     <!-- City Hero Section -->
     <section class="city-hero">
       <div
         class="city-image"
         style="background-image: url('../images/cape-town.jpg')"
       ></div>
-      <h1>Plan Your Perfect Cape Town Adventure</h1>
-      <p>
-        Find out how many days to spend in South Africa's stunning coastal city.
-      </p>
+      <h1>Plan your perfect Cape Town adventure</h1>
+      <p>Find out how many days to spend in South Africa’s scenic gem.</p>
     </section>
 
     <!-- Main Content -->
     <section class="city-content">
-      <h2>How Many Days to Spend in Cape Town</h2>
+      <h2>How many days to spend in Cape Town</h2>
       <p>
-        Cape Town, with its dramatic landscapes and rich history, is a gem. We
-        recommend spending <strong>4-6 days</strong> to explore its highlights.
+        Cape Town, with its stunning landscapes and vibrant culture, is a
+        must-visit destination. To fully experience Cape Town, we recommend
+        spending
+        <strong>5-7 days</strong>.
       </p>
       <p>
-        In 4-6 days, you can hike Table Mountain, visit Robben Island, explore
-        the V&A Waterfront, and drive along the Cape Peninsula. Add a day for a
-        wine tour in Stellenbosch.
+        With 5-7 days, you can hike Table Mountain, visit Robben Island, explore
+        the Cape Winelands, and drive along the Cape Peninsula to see the
+        penguins at Boulders Beach. This duration allows you to soak in the
+        city’s natural beauty and history.
       </p>
-    </section>
-
-    <!-- Local Tip Section -->
-    <section class="local-tips">
-      <h2>Local Tip</h2>
-      <p>
-        <i class="fas fa-lightbulb"></i> Hike up Table Mountain early in the
-        morning to beat the heat and crowds.
-      </p>
+      <div class="itinerary">
+        <h3>Suggested Itinerary</h3>
+        <ul>
+          <li>
+            <strong>Day 1:</strong> Hike or take the cable car up Table
+            Mountain.
+          </li>
+          <li>
+            <strong>Day 2:</strong> Visit Robben Island and explore the V&A
+            Waterfront.
+          </li>
+          <li>
+            <strong>Day 3:</strong> Drive to Cape Point and see the penguins at
+            Boulders Beach.
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Top Attractions Section -->
     <section class="top-attractions">
-      <h2>Top Attractions in Cape Town</h2>
-      <ul>
-        <li>
-          <strong>Table Mountain</strong>: Take a cable car to the top for
-          breathtaking views.
-        </li>
-        <li>
-          <strong>Robben Island</strong>: Visit the historic prison where Nelson
-          Mandela was held.
-        </li>
-        <li>
-          <strong>V&A Waterfront</strong>: Shop, dine, and enjoy the harbor
-          views.
-        </li>
-      </ul>
+      <h2>Top attractions in Cape Town</h2>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/table-mountain.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Table Mountain</h3>
+          <p>Enjoy panoramic views from this iconic flat-topped mountain.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/robben-island.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Robben Island</h3>
+          <p>Learn about South Africa’s history at this UNESCO site.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/boulders-beach.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Boulders Beach</h3>
+          <p>Meet the adorable African penguins at this scenic beach.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Local Tip Section -->
+    <section class="local-tips">
+      <h2>Local tip</h2>
+      <p>
+        <i class="fas fa-lightbulb"></i> Visit the Cape Winelands for a day of
+        wine tasting and stunning vineyard views.
+      </p>
     </section>
 
     <!-- Explore More Cities Section -->
     <section class="explore-more">
-      <h2>Explore More Cities</h2>
-      <div class="city-grid small">
-        <a href="/cities/paris.html" class="city-card">
+      <h2>Keep exploring</h2>
+      <p class="section-subtitle">
+        Discover more destinations to plan your perfect trip.
+      </p>
+      <div class="city-grid">
+        <a href="/cities/sydney.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/paris.jpg')"
+            style="background-image: url('../images/sydney.jpg')"
           ></div>
-          <h3>Paris</h3>
-          <p>4-6 days</p>
+          <h3>Sydney</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Sydney</button>
         </a>
-        <a href="/cities/london.html" class="city-card">
+        <a href="/cities/rio-de-janeiro.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/london.jpg')"
+            style="background-image: url('../images/rio-de-janeiro.jpg')"
           ></div>
-          <h3>London</h3>
-          <p>5-7 days</p>
+          <h3>Rio de Janeiro</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Rio de Janeiro</button>
         </a>
-        <a href="/cities/tokyo.html" class="city-card">
+        <a href="/cities/kyoto.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/tokyo.jpg')"
+            style="background-image: url('../images/kyoto.jpg')"
           ></div>
-          <h3>Tokyo</h3>
-          <p>7-10 days</p>
+          <h3>Kyoto</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Kyoto</button>
         </a>
       </div>
     </section>

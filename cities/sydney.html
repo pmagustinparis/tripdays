@@ -13,7 +13,7 @@
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Plan Your Perfect Sydney Adventure | Tripdays</title>
+    <title>Plan your perfect Sydney adventure | Tripdays</title>
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,6 +40,7 @@
     </script>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <a href="/index.html" class="navbar-logo">Tripdays</a>
       <div class="navbar-menu">
@@ -63,87 +64,127 @@
         </select>
       </div>
     </nav>
-    <header class="site-header">
-      <a href="/index.html" class="home-link">Tripdays</a>
-    </header>
+
     <!-- City Hero Section -->
     <section class="city-hero">
       <div
         class="city-image"
         style="background-image: url('../images/sydney.jpg')"
       ></div>
-      <h1>Plan Your Perfect Sydney Adventure</h1>
-      <p>Find out how many days to spend in Australia's iconic harbor city.</p>
+      <h1>Plan your perfect Sydney adventure</h1>
+      <p>Find out how many days to spend in Australia’s vibrant harbor city.</p>
     </section>
 
     <!-- Main Content -->
     <section class="city-content">
-      <h2>How Many Days to Spend in Sydney</h2>
+      <h2>How many days to spend in Sydney</h2>
       <p>
-        Sydney, with its stunning harbor and vibrant culture, is a must-visit.
-        We recommend spending <strong>4-6 days</strong> to explore its
-        highlights.
+        Sydney, with its stunning harbor and laid-back vibe, offers a mix of
+        urban and natural attractions. To fully experience Sydney, we recommend
+        spending <strong>5-7 days</strong>.
       </p>
       <p>
-        In 4-6 days, you can visit the Sydney Opera House, climb the Harbour
-        Bridge, relax at Bondi Beach, and explore The Rocks. Add a day for a
-        trip to the Blue Mountains.
+        With 5-7 days, you can visit the Sydney Opera House, explore Bondi
+        Beach, take a ferry to Manly, and hike in the Blue Mountains. This
+        duration allows you to enjoy both the city and its surrounding natural
+        beauty.
       </p>
-    </section>
-
-    <!-- Local Tip Section -->
-    <section class="local-tips">
-      <h2>Local Tip</h2>
-      <p>
-        <i class="fas fa-lightbulb"></i> Take the coastal walk from Bondi to
-        Bronte for stunning ocean views.
-      </p>
+      <div class="itinerary">
+        <h3>Suggested Itinerary</h3>
+        <ul>
+          <li>
+            <strong>Day 1:</strong> Visit the Sydney Opera House and Sydney
+            Harbour Bridge.
+          </li>
+          <li>
+            <strong>Day 2:</strong> Relax at Bondi Beach and do the coastal
+            walk.
+          </li>
+          <li>
+            <strong>Day 3:</strong> Take a day trip to the Blue Mountains for
+            hiking.
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Top Attractions Section -->
     <section class="top-attractions">
-      <h2>Top Attractions in Sydney</h2>
-      <ul>
-        <li>
-          <strong>Sydney Opera House</strong>: Take a tour of this iconic
-          architectural marvel.
-        </li>
-        <li>
-          <strong>Sydney Harbour Bridge</strong>: Climb the bridge for panoramic
-          views.
-        </li>
-        <li>
-          <strong>Bondi Beach</strong>: Relax or surf at this famous beach.
-        </li>
-      </ul>
+      <h2>Top attractions in Sydney</h2>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/sydney-opera-house.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Sydney Opera House</h3>
+          <p>Iconic landmark with stunning harbor views.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/bondi-beach.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Bondi Beach</h3>
+          <p>Relax on this famous beach and enjoy the coastal walk.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/sydney-harbour-bridge.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Sydney Harbour Bridge</h3>
+          <p>Walk or climb this iconic bridge for panoramic views.</p>
+        </div>
+      </div>
     </section>
+
+    <!-- Local Tip Section -->
+    <section class="local-tips">
+      <h2>Local tip</h2>
+      <p>
+        <i class="fas fa-lightbulb"></i> Take a ferry to Manly for a scenic ride
+        and a relaxing day by the beach.
+      </p>
+    </section>
+
     <!-- Explore More Cities Section -->
     <section class="explore-more">
-      <h2>Explore More Cities</h2>
-      <div class="city-grid small">
-        <a href="/cities/paris.html" class="city-card">
+      <h2>Keep exploring</h2>
+      <p class="section-subtitle">
+        Discover more destinations to plan your perfect trip.
+      </p>
+      <div class="city-grid">
+        <a href="/cities/cape-town.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/paris.jpg')"
+            style="background-image: url('../images/cape-town.jpg')"
           ></div>
-          <h3>Paris</h3>
-          <p>4-6 days</p>
+          <h3>Cape Town</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Cape Town</button>
         </a>
-        <a href="/cities/london.html" class="city-card">
+        <a href="/cities/rio-de-janeiro.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/london.jpg')"
+            style="background-image: url('../images/rio-de-janeiro.jpg')"
           ></div>
-          <h3>London</h3>
-          <p>5-7 days</p>
+          <h3>Rio de Janeiro</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Rio de Janeiro</button>
         </a>
-        <a href="/cities/tokyo.html" class="city-card">
+        <a href="/cities/kyoto.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/tokyo.jpg')"
+            style="background-image: url('../images/kyoto.jpg')"
           ></div>
-          <h3>Tokyo</h3>
-          <p>7-10 days</p>
+          <h3>Kyoto</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Kyoto</button>
         </a>
       </div>
     </section>

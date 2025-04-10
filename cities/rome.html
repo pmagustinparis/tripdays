@@ -13,7 +13,7 @@
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Plan Your Perfect Rome Adventure | Tripdays</title>
+    <title>Plan your perfect Rome adventure | Tripdays</title>
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,6 +40,7 @@
     </script>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <a href="/index.html" class="navbar-logo">Tripdays</a>
       <div class="navbar-menu">
@@ -63,88 +64,122 @@
         </select>
       </div>
     </nav>
-    <header class="site-header">
-      <a href="/index.html" class="home-link">Tripdays</a>
-    </header>
+
     <!-- City Hero Section -->
     <section class="city-hero">
       <div
         class="city-image"
         style="background-image: url('../images/rome.jpg')"
       ></div>
-      <h1>Plan Your Perfect Rome Adventure</h1>
+      <h1>Plan your perfect Rome adventure</h1>
       <p>Find out how many days to spend in the Eternal City.</p>
     </section>
 
     <!-- Main Content -->
     <section class="city-content">
-      <h2>How Many Days to Spend in Rome</h2>
+      <h2>How many days to spend in Rome</h2>
       <p>
-        Rome, a city steeped in history, offers ancient ruins and vibrant
-        culture. We recommend spending <strong>4-6 days</strong> to explore its
-        treasures.
+        Rome, the Eternal City, is a treasure trove of history and culture. To
+        fully experience Rome, we recommend spending <strong>4-6 days</strong>.
       </p>
       <p>
-        In 4-6 days, you can visit the Colosseum, explore the Roman Forum, toss
-        a coin into the Trevi Fountain, and enjoy authentic Italian cuisine. Add
-        a day for a trip to Vatican City or Pompeii.
+        With 4-6 days, you can visit the Colosseum, explore the Vatican, stroll
+        through the Roman Forum, and toss a coin into the Trevi Fountain. Add a
+        day to explore Trastevere for a taste of local life.
       </p>
+      <div class="itinerary">
+        <h3>Suggested Itinerary</h3>
+        <ul>
+          <li><strong>Day 1:</strong> Visit the Colosseum and Roman Forum.</li>
+          <li>
+            <strong>Day 2:</strong> Explore Vatican City and St. Peter’s
+            Basilica.
+          </li>
+          <li>
+            <strong>Day 3:</strong> Stroll to the Trevi Fountain and Spanish
+            Steps.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Top Attractions Section -->
+    <section class="top-attractions">
+      <h2>Top attractions in Rome</h2>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/colosseum.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Colosseum</h3>
+          <p>Step back in time at this iconic ancient amphitheater.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/vatican-city.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Vatican City</h3>
+          <p>Visit the Sistine Chapel and St. Peter’s Basilica.</p>
+        </div>
+      </div>
+      <div class="attraction-item">
+        <div
+          class="attraction-image"
+          style="background-image: url('../images/trevi-fountain.jpg')"
+        ></div>
+        <div class="attraction-content">
+          <h3>Trevi Fountain</h3>
+          <p>Toss a coin to ensure your return to Rome.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Local Tip Section -->
     <section class="local-tips">
-      <h2>Local Tip</h2>
+      <h2>Local tip</h2>
       <p>
-        <i class="fas fa-lightbulb"></i> Toss a coin into the Trevi Fountain at
-        night when it’s beautifully lit and less crowded.
+        <i class="fas fa-lightbulb"></i> Enjoy a gelato near the Pantheon for a
+        sweet Roman treat.
       </p>
-    </section>
-    <!-- Top Attractions Section -->
-    <section class="top-attractions">
-      <h2>Top Attractions in Rome</h2>
-      <ul>
-        <li>
-          <strong>Colosseum</strong>: Step back in time at this ancient Roman
-          amphitheater.
-        </li>
-        <li>
-          <strong>Vatican Museums</strong>: See the Sistine Chapel and St.
-          Peter’s Basilica.
-        </li>
-        <li>
-          <strong>Trevi Fountain</strong>: Toss a coin into this iconic fountain
-          for good luck.
-        </li>
-      </ul>
     </section>
 
     <!-- Explore More Cities Section -->
     <section class="explore-more">
-      <h2>Explore More Cities</h2>
-      <div class="city-grid small">
-        <a href="/cities/paris.html" class="city-card">
+      <h2>Keep exploring</h2>
+      <p class="section-subtitle">
+        Discover more destinations to plan your perfect trip.
+      </p>
+      <div class="city-grid">
+        <a href="/cities/dubai.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/paris.jpg')"
+            style="background-image: url('../images/dubai.jpg')"
           ></div>
-          <h3>Paris</h3>
-          <p>4-6 days</p>
+          <h3>Dubai</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Dubai</button>
         </a>
-        <a href="/cities/london.html" class="city-card">
+        <a href="/cities/istanbul.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/london.jpg')"
+            style="background-image: url('../images/istanbul.jpg')"
           ></div>
-          <h3>London</h3>
-          <p>5-7 days</p>
+          <h3>Istanbul</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Istanbul</button>
         </a>
-        <a href="/cities/tokyo.html" class="city-card">
+        <a href="/cities/singapore.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/tokyo.jpg')"
+            style="background-image: url('../images/singapore.jpg')"
           ></div>
-          <h3>Tokyo</h3>
-          <p>7-10 days</p>
+          <h3>Singapore</h3>
+          <p><span class="days-badge">3-5 days</span></p>
+          <button class="discover-button">Discover Singapore</button>
         </a>
       </div>
     </section>
