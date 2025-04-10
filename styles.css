@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* styles.css */
 * {
   margin: 0;
   padding: 0;
@@ -7,26 +7,25 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  line-height: 1.6;
   color: #333;
+  line-height: 1.6;
 }
 
-/* Navbar Styles */
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
   z-index: 1000;
 }
 
 .navbar-logo {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 700;
   color: #1a3c5a;
   text-decoration: none;
@@ -34,74 +33,69 @@ body {
 
 .navbar-menu select {
   padding: 10px;
-  font-size: 1rem;
-  border: 2px solid #1a3c5a;
+  font-size: 16px;
   border-radius: 5px;
+  border: 1px solid #1a3c5a;
   background-color: #1a3c5a;
   color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.navbar-menu select:hover {
-  background-color: #2a5c8a;
-}
-
-/* Hero Section */
 .hero {
-  position: relative;
-  height: 600px;
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/hero-bg.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/hero-bg.jpg") no-repeat center center/cover;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 48px;
+  font-weight: 700;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
-/* Destinations Section */
-.destinations-section {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 0 20px;
+.discover-destinations {
+  padding: 60px 40px;
   text-align: center;
 }
 
-.destinations-section h2 {
-  font-size: 2rem;
+.discover-destinations h2 {
+  font-size: 36px;
+  font-weight: 700;
   margin-bottom: 10px;
+  color: #1a3c5a;
 }
 
 .section-subtitle {
-  font-size: 1.2rem;
+  font-size: 18px;
   color: #666;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .city-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .city-card {
-  position: relative;
-  text-decoration: none;
-  color: #333;
-  border-radius: 8px;
+  background-color: #fff;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
   transition: transform 0.3s ease;
 }
 
@@ -110,62 +104,119 @@ body {
 }
 
 .city-image {
-  width: 100%;
   height: 200px;
   background-size: cover;
   background-position: center;
 }
 
 .city-card h3 {
-  font-size: 1.3rem;
-  margin: 15px 0 5px;
-  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1a3c5a;
+  margin: 15px 0 10px;
 }
 
 .city-card p {
-  font-size: 1rem;
+  font-size: 16px;
   color: #666;
-  text-align: center;
   margin-bottom: 15px;
 }
 
 .days-badge {
-  display: inline-block;
   background-color: #1a3c5a;
   color: #fff;
   padding: 5px 10px;
-  border-radius: 12px;
-  font-size: 0.9rem;
-  font-weight: 500;
+  border-radius: 15px;
+  font-size: 14px;
 }
 
-/* Responsive Design */
+.discover-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1a3c5a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.discover-button:hover {
+  background-color: #2a5c8a;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
   .hero {
-    height: 500px;
+    height: 400px;
   }
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 32px;
   }
 
   .hero-content p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
-  .destinations-section h2 {
-    font-size: 1.5rem;
+  .discover-destinations {
+    padding: 40px 20px;
+  }
+
+  .discover-destinations h2 {
+    font-size: 28px;
   }
 
   .section-subtitle {
-    font-size: 1rem;
+    font-size: 16px;
+  }
+
+  .city-grid {
+    grid-template-columns: 1fr;
   }
 
   .city-card h3 {
-    font-size: 1.2rem;
+    font-size: 20px;
   }
 
   .city-card p {
-    font-size: 0.9rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .navbar-menu select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .hero {
+    height: 350px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .discover-destinations h2 {
+    font-size: 24px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
   }
 }
