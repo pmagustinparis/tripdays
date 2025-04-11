@@ -206,7 +206,38 @@ body {
   background-color: #2a5c8a;
 }
 
-/* Responsive Styles */
+/* Footer Styles */
+.footer {
+  background-color: #1a3c5a;
+  color: #fff;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  margin-bottom: 15px;
+}
+
+.footer-content h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.footer-content p {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.footer-bottom {
+  border-top: 1px solid #2a5c8a;
+  padding-top: 15px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #ddd;
+}
+
 @media (max-width: 768px) {
   .hero {
     height: 400px;
