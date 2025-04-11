@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* city-styles.css */
 * {
   margin: 0;
   padding: 0;
@@ -7,26 +7,28 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  line-height: 1.6;
   color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+  width: 100%; /* Aseguramos que el body ocupe todo el ancho */
+  max-width: none; /* Evitamos restricciones de ancho en el body */
 }
 
-/* Navbar Styles */
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
   z-index: 1000;
 }
 
 .navbar-logo {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 700;
   color: #1a3c5a;
   text-decoration: none;
@@ -34,203 +36,137 @@ body {
 
 .navbar-menu select {
   padding: 10px;
-  font-size: 1rem;
-  border: 2px solid #1a3c5a;
+  font-size: 16px;
   border-radius: 5px;
+  border: 1px solid #1a3c5a;
   background-color: #1a3c5a;
   color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.navbar-menu select:hover {
-  background-color: #2a5c8a;
-}
-
-/* City Hero Section */
-.city-hero {
-  position: relative;
+.hero {
+  width: 100%;
   height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/london.jpg") center/cover no-repeat;
+  background-color: #333;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
-.city-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-}
-
-.city-hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  color: #fff;
-  -webkit-text-stroke: 1px #000;
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.city-hero p {
-  font-size: 1.2rem;
+.hero-content p {
+  font-size: 20px;
+  font-weight: 400;
 }
 
-/* Main Content */
-.city-content {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 0 20px;
+.days-to-spend {
+  padding: 60px 40px;
+  text-align: center;
+  width: 100%; /* Aseguramos que la sección ocupe todo el ancho */
+  max-width: none; /* Evitamos restricciones de ancho */
 }
 
-.city-content h2 {
-  font-size: 2rem;
+.days-to-spend h2 {
+  font-size: 36px;
+  font-weight: 700;
   margin-bottom: 20px;
+  color: #1a3c5a;
 }
 
-.city-content p {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
+.days-to-spend p {
+  font-size: 18px;
+  color: #666;
+  max-width: 1000px; /* Aumentamos el max-width para que el texto no sea tan estrecho */
+  margin: 0 auto;
+  line-height: 1.8;
 }
 
-/* Itinerary Styles */
 .itinerary {
-  margin-top: 30px;
+  padding: 60px 40px;
   background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: none;
 }
 
-.itinerary h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+.itinerary h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
   color: #1a3c5a;
 }
 
-.itinerary ul {
-  list-style: none;
+.itinerary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.itinerary li {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.itinerary li strong {
-  color: #1a3c5a;
-}
-
-/* Top Attractions Section */
-.top-attractions {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 0 20px;
-}
-
-.top-attractions h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-.attraction-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
+.itinerary-item {
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.attraction-image {
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  background-position: center;
-}
-
-.attraction-content {
   padding: 20px;
-  flex: 1;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.attraction-content h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+.itinerary-item h3 {
+  font-size: 20px;
+  font-weight: 500;
   color: #1a3c5a;
+  margin-bottom: 10px;
 }
 
-.attraction-content p {
-  font-size: 1rem;
+.itinerary-item p {
+  font-size: 16px;
   color: #666;
 }
 
-/* Local Tips Section */
-.local-tips {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #f0f8ff;
-  border-left: 5px solid #1a3c5a;
-  border-radius: 5px;
-}
-
-.local-tips h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-
-.local-tips p {
-  font-size: 1.1rem;
-  display: flex;
-  align-items: center;
-}
-
-.local-tips i {
-  margin-right: 10px;
-  color: #1a3c5a;
-}
-
-/* Explore More Cities Section */
 .explore-more {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 0 20px;
+  padding: 60px 40px;
   text-align: center;
+  width: 100%;
+  max-width: none;
 }
 
 .explore-more h2 {
-  font-size: 2rem;
+  font-size: 36px;
+  font-weight: 700;
   margin-bottom: 10px;
+  color: #1a3c5a;
 }
 
 .section-subtitle {
-  font-size: 1.2rem;
+  font-size: 18px;
   color: #666;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .city-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .city-card {
-  position: relative;
-  text-decoration: none;
-  color: #333;
-  border-radius: 8px;
+  background-color: #fff;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
   transition: transform 0.3s ease;
 }
 
@@ -239,44 +175,42 @@ body {
 }
 
 .city-image {
-  width: 100%;
   height: 200px;
   background-size: cover;
   background-position: center;
 }
 
 .city-card h3 {
-  font-size: 1.3rem;
-  margin: 15px 0 5px;
-  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1a3c5a;
+  margin: 15px 0 10px;
 }
 
 .city-card p {
-  font-size: 1rem;
+  font-size: 16px;
   color: #666;
-  text-align: center;
   margin-bottom: 15px;
 }
 
 .days-badge {
-  display: inline-block;
   background-color: #1a3c5a;
   color: #fff;
   padding: 5px 10px;
-  border-radius: 12px;
-  font-size: 0.9rem;
-  font-weight: 500;
+  border-radius: 15px;
+  font-size: 14px;
 }
 
 .discover-button {
-  display: block;
-  margin: 0 auto 15px;
+  display: inline-block;
   padding: 10px 20px;
   background-color: #1a3c5a;
   color: #fff;
   border: none;
   border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
+  margin-bottom: 15px;
   transition: background-color 0.3s ease;
 }
 
@@ -284,42 +218,139 @@ body {
   background-color: #2a5c8a;
 }
 
-/* Responsive Design */
+/* Footer Styles */
+.footer {
+  background-color: #1a3c5a;
+  color: #fff;
+  padding: 20px 20px;
+  text-align: center;
+  width: 100%;
+  max-width: none;
+}
+
+.footer-content {
+  margin-bottom: 15px;
+}
+
+.footer-content h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.footer-content p {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.footer-bottom {
+  border-top: 1px solid #2a5c8a;
+  padding-top: 15px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .city-hero {
+  .hero {
     height: 400px;
   }
 
-  .city-hero h1 {
-    font-size: 2rem;
+  .hero-content h1 {
+    font-size: 32px;
   }
 
-  .city-hero p {
-    font-size: 1rem;
+  .hero-content p {
+    font-size: 16px;
   }
 
-  .city-content h2,
-  .top-attractions h2,
-  .local-tips h2,
+  .days-to-spend {
+    padding: 40px 20px;
+  }
+
+  .days-to-spend h2 {
+    font-size: 28px;
+  }
+
+  .days-to-spend p {
+    font-size: 16px;
+    max-width: 100%; /* En pantallas pequeñas, el texto ocupa todo el ancho */
+  }
+
+  .itinerary {
+    padding: 40px 20px;
+  }
+
+  .itinerary h2 {
+    font-size: 28px;
+  }
+
+  .explore-more {
+    padding: 40px 20px;
+  }
+
   .explore-more h2 {
-    font-size: 1.5rem;
+    font-size: 28px;
   }
 
-  .attraction-item {
-    flex-direction: column;
-    text-align: center;
+  .section-subtitle {
+    font-size: 16px;
   }
 
-  .attraction-image {
-    width: 100%;
-    height: 200px;
+  .city-grid {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
   }
 
   .city-card h3 {
-    font-size: 1.2rem;
+    font-size: 20px;
   }
 
   .city-card p {
-    font-size: 0.9rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .navbar-menu select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .hero {
+    height: 350px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .days-to-spend h2 {
+    font-size: 24px;
+  }
+
+  .itinerary h2 {
+    font-size: 24px;
+  }
+
+  .explore-more h2 {
+    font-size: 24px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
   }
 }
