@@ -1,43 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/TravelGuide">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Plan your trip to Sydney with Tripdays! Find out how many days to spend in Sydney and get a tailored travel itinerary."
+      content="Plan your perfect Sydney trip with Tripdays. Discover how many days to spend in Sydney, a detailed 5–7 day itinerary, local tips, and practical information for Australia's vibrant harbor city."
     />
     <meta
       name="keywords"
-      content="Sydney travel days, Sydney itinerary, Tripdays, travel planning"
+      content="Sydney travel, how many days in Sydney, Sydney itinerary 5-7 days, best local tips for Sydney, Sydney travel guide, Tripdays"
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Plan your perfect Sydney adventure | Tripdays</title>
+    <title>
+      Sydney Travel Guide: How Many Days to Spend in Sydney - Tripdays
+    </title>
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-QBDBHNMZN6"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-QBDBHNMZN6");
-    </script>
   </head>
   <body>
     <!-- Navbar -->
@@ -65,104 +55,314 @@
       </div>
     </nav>
 
-    <!-- City Hero Section -->
-    <section class="city-hero">
-      <div
-        class="city-image"
-        style="background-image: url('../images/sydney.jpg')"
-      ></div>
-      <h1>Plan your perfect Sydney adventure</h1>
-      <p>Find out how many days to spend in Australia’s vibrant harbor city.</p>
+    <!-- Hero Section -->
+    <section
+      class="hero"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+          url('../images/sydney.jpg?v=1') center/cover no-repeat;
+      "
+    >
+      <div class="hero-content">
+        <h1>Plan your perfect Sydney adventure</h1>
+        <p>
+          Find out how many days to spend in Australia's vibrant harbor city.
+        </p>
+        <a href="#days-to-spend" class="cta-button">Discover How Many Days</a>
+      </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="city-content">
+    <!-- Days to Spend Section -->
+    <section id="days-to-spend" class="days-to-spend">
       <h2>How many days to spend in Sydney</h2>
       <p>
-        Sydney, with its stunning harbor and laid-back vibe, offers a mix of
-        urban and natural attractions. To fully experience Sydney, we recommend
-        spending <strong>5-7 days</strong>.
+        Sydney, with its iconic harbor, stunning beaches, and vibrant culture,
+        is a must-visit destination in Australia. To fully experience Sydney, we
+        recommend spending
+        <span class="highlight-days" itemprop="duration"
+          ><i class="fas fa-clock"></i> 5–7 days</span
+        >.
       </p>
       <p>
-        With 5-7 days, you can visit the Sydney Opera House, explore Bondi
-        Beach, take a ferry to Manly, and hike in the Blue Mountains. This
-        duration allows you to enjoy both the city and its surrounding natural
-        beauty.
+        With 5–7 days, you can explore the Sydney Opera House, relax at Bondi
+        Beach, take a ferry to Manly, and venture on a day trip to the Blue
+        Mountains. This duration lets you enjoy both the city’s urban energy and
+        natural beauty.
       </p>
-      <div class="itinerary">
-        <h3>Suggested Itinerary</h3>
-        <ul>
-          <li>
-            <strong>Day 1:</strong> Visit the Sydney Opera House and Sydney
-            Harbour Bridge.
-          </li>
-          <li>
-            <strong>Day 2:</strong> Relax at Bondi Beach and do the coastal
-            walk.
-          </li>
-          <li>
-            <strong>Day 3:</strong> Take a day trip to the Blue Mountains for
-            hiking.
-          </li>
-        </ul>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section class="itinerary">
+      <h2>Suggested Itinerary for Sydney</h2>
+      <p class="itinerary-intro">
+        Here’s a suggested itinerary for 5–7 days in Sydney. Days 1–5 cover the
+        essentials, while Days 6–7 are perfect for an extended stay.
+      </p>
+      <div class="itinerary-grid" itemprop="itinerary">
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 1: Arrival and Sydney
+            Harbour
+          </h3>
+          <p>
+            Arrive in Sydney and start with a visit to the Sydney Opera House
+            and Sydney Harbour Bridge. Stroll through the Royal Botanic Garden
+            and enjoy dinner at Circular Quay.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 2: Bondi Beach and Coastal
+            Walk
+          </h3>
+          <p>
+            Head to Bondi Beach for a morning swim or surf lesson. Walk the
+            Bondi to Coogee coastal trail, stopping at Bronte Beach. Return to
+            the city for dinner in Surry Hills.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 3: The Rocks and Manly
+          </h3>
+          <p>
+            Explore The Rocks, Sydney’s historic district, and visit the Museum
+            of Contemporary Art. Take a ferry to Manly for a beach afternoon and
+            fish-and-chips dinner.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 4: Day Trip to the Blue
+            Mountains
+          </h3>
+          <p>
+            Take a day trip to the Blue Mountains—see the Three Sisters, hike in
+            Katoomba, and visit Scenic World. Return to Sydney for a relaxing
+            evening.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 5: Darling Harbour and
+            Culture
+          </h3>
+          <p>
+            Visit Darling Harbour—explore the SEA LIFE Sydney Aquarium and the
+            Australian National Maritime Museum. In the evening, catch a show at
+            the Capitol Theatre.
+          </p>
+        </div>
+        <div class="itinerary-item extended">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 6: Hidden Gems
+            <span class="extended-label">Extended Stay</span>
+          </h3>
+          <p>
+            Discover Paddington for boutique shopping and the Paddington
+            Reservoir Gardens. Then head to Watsons Bay for stunning views and a
+            seafood lunch at Doyles.
+          </p>
+        </div>
+        <div class="itinerary-item extended">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 7: Leisure and Departure
+            <span class="extended-label">Extended Stay</span>
+          </h3>
+          <p>
+            Spend your final day exploring the Art Gallery of New South Wales or
+            relaxing at Centennial Park. Depart from Sydney with unforgettable
+            memories.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- Top Attractions Section -->
-    <section class="top-attractions">
-      <h2>Top attractions in Sydney</h2>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/sydney-opera-house.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Sydney Opera House</h3>
-          <p>Iconic landmark with stunning harbor views.</p>
-        </div>
-      </div>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/bondi-beach.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Bondi Beach</h3>
-          <p>Relax on this famous beach and enjoy the coastal walk.</p>
-        </div>
-      </div>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/sydney-harbour-bridge.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Sydney Harbour Bridge</h3>
-          <p>Walk or climb this iconic bridge for panoramic views.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Local Tip Section -->
+    <!-- Local Tips Section -->
     <section class="local-tips">
-      <h2>Local tip</h2>
+      <h2><i class="fas fa-lightbulb"></i> Local Tips for Visiting Sydney</h2>
+      <ul>
+        <li>
+          Use an Opal card for public transport—it works on ferries, trains, and
+          buses, and is the easiest way to get around.
+        </li>
+        <li>
+          Book a Sydney Opera House tour in advance to learn about its history
+          and architecture.
+        </li>
+        <li>
+          Pack sunscreen and a hat—Sydney’s sun is strong, especially in summer
+          (December to February).
+        </li>
+        <li>
+          Try local Aussie foods like a meat pie, fish and chips, or a flat
+          white coffee from a local café.
+        </li>
+        <li>
+          Be mindful of ocean safety—swim between the flags at beaches and
+          follow lifeguard instructions.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Practical Information Section -->
+    <section class="practical-info">
+      <h2>
+        <i class="fas fa-map-marked-alt"></i> Practical Information for Sydney
+      </h2>
+      <h3>Getting Around</h3>
       <p>
-        <i class="fas fa-lightbulb"></i> Take a ferry to Manly for a scenic ride
-        and a relaxing day by the beach.
+        Sydney’s public transport includes ferries, trains, and buses—use an
+        Opal card for convenience. Taxis and rideshare apps like Uber are also
+        widely available.
+      </p>
+      <h3>Best Time to Visit</h3>
+      <p>
+        Spring (September to November) and autumn (March to May) offer mild
+        weather and fewer crowds. Summer (December to February) is great for
+        beaches but hot, while winter (June to August) is cooler but still
+        pleasant.
+      </p>
+      <h3>Safety Tips</h3>
+      <p>
+        Sydney is very safe, but be cautious of strong currents at
+        beaches—always swim between the flags. Avoid leaving valuables
+        unattended, especially at popular tourist spots.
       </p>
     </section>
 
     <!-- Explore More Cities Section -->
-    <section class="explore-more">
-      <h2>Keep exploring</h2>
-      <p class="section-subtitle">
-        Discover more destinations to plan your perfect trip.
-      </p>
+    <section class="discover-destinations">
+      <h2>Explore More Cities</h2>
+      <p class="section-subtitle">Discover other amazing destinations.</p>
       <div class="city-grid">
+        <a href="/cities/paris.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/paris.jpg?v=1')"
+            role="img"
+            aria-label="Eiffel Tower in Paris"
+            loading="lazy"
+          ></div>
+          <h3>Paris</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Paris</button>
+        </a>
+        <a href="/cities/london.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/london.jpg?v=1')"
+            role="img"
+            aria-label="Big Ben and the London skyline"
+            loading="lazy"
+          ></div>
+          <h3>London</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover London</button>
+        </a>
+        <a href="/cities/bangkok.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/bangkok.jpg?v=1')"
+            role="img"
+            aria-label="Grand Palace in Bangkok"
+            loading="lazy"
+          ></div>
+          <h3>Bangkok</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Bangkok</button>
+        </a>
+        <a href="/cities/new-york.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/new-york.jpg?v=1')"
+            role="img"
+            aria-label="New York City skyline with the Empire State Building"
+            loading="lazy"
+          ></div>
+          <h3>New York</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover New York</button>
+        </a>
+        <a href="/cities/tokyo.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/tokyo.jpg?v=1')"
+            role="img"
+            aria-label="Shibuya Crossing in Tokyo"
+            loading="lazy"
+          ></div>
+          <h3>Tokyo</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Tokyo</button>
+        </a>
+        <a href="/cities/dubai.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/dubai.jpg?v=1')"
+            role="img"
+            aria-label="Burj Khalifa in Dubai"
+            loading="lazy"
+          ></div>
+          <h3>Dubai</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Dubai</button>
+        </a>
+        <a href="/cities/istanbul.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/istanbul.jpg?v=1')"
+            role="img"
+            aria-label="Hagia Sophia in Istanbul"
+            loading="lazy"
+          ></div>
+          <h3>Istanbul</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Istanbul</button>
+        </a>
+        <a href="/cities/singapore.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/singapore.jpg?v=1')"
+            role="img"
+            aria-label="Marina Bay Sands in Singapore"
+            loading="lazy"
+          ></div>
+          <h3>Singapore</h3>
+          <p><span class="days-badge">3-5 days</span></p>
+          <button class="discover-button">Discover Singapore</button>
+        </a>
+        <a href="/cities/rome.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/rome.jpg?v=1')"
+            role="img"
+            aria-label="Colosseum in Rome"
+            loading="lazy"
+          ></div>
+          <h3>Rome</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Rome</button>
+        </a>
+        <a href="/cities/barcelona.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/barcelona.jpg?v=1')"
+            role="img"
+            aria-label="Sagrada Família in Barcelona"
+            loading="lazy"
+          ></div>
+          <h3>Barcelona</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Barcelona</button>
+        </a>
         <a href="/cities/cape-town.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/cape-town.jpg')"
+            style="background-image: url('../images/cape-town.jpg?v=1')"
+            role="img"
+            aria-label="Table Mountain in Cape Town"
+            loading="lazy"
           ></div>
           <h3>Cape Town</h3>
           <p><span class="days-badge">5-7 days</span></p>
@@ -171,7 +371,10 @@
         <a href="/cities/rio-de-janeiro.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/rio-de-janeiro.jpg')"
+            style="background-image: url('../images/rio-de-janeiro.jpg?v=1')"
+            role="img"
+            aria-label="Christ the Redeemer in Rio de Janeiro"
+            loading="lazy"
           ></div>
           <h3>Rio de Janeiro</h3>
           <p><span class="days-badge">5-7 days</span></p>
@@ -180,13 +383,39 @@
         <a href="/cities/kyoto.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/kyoto.jpg')"
+            style="background-image: url('../images/kyoto.jpg?v=1')"
+            role="img"
+            aria-label="Fushimi Inari Shrine in Kyoto"
+            loading="lazy"
           ></div>
           <h3>Kyoto</h3>
           <p><span class="days-badge">4-6 days</span></p>
           <button class="discover-button">Discover Kyoto</button>
         </a>
+        <a href="/cities/prague.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/prague.jpg?v=1')"
+            role="img"
+            aria-label="Charles Bridge in Prague"
+            loading="lazy"
+          ></div>
+          <h3>Prague</h3>
+          <p><span class="days-badge">3-5 days</span></p>
+          <button class="discover-button">Discover Prague</button>
+        </a>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>Tripdays</h3>
+        <p>Plan your perfect trip.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Tripdays. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

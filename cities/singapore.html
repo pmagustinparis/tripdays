@@ -1,43 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/TravelGuide">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Plan your trip to Singapore with Tripdays! Find out how many days to spend in Singapore and get a tailored travel itinerary."
+      content="Plan your perfect Singapore trip with Tripdays. Discover how many days to spend in Singapore, a detailed 3–5 day itinerary, local tips, and practical information for this futuristic city-state."
     />
     <meta
       name="keywords"
-      content="Singapore travel days, Singapore itinerary, Tripdays, travel planning"
+      content="Singapore travel, how many days in Singapore, Singapore itinerary 3-5 days, best local tips for Singapore, Singapore travel guide, Tripdays"
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Plan your perfect Singapore adventure | Tripdays</title>
+    <title>
+      Singapore Travel Guide: How Many Days to Spend in Singapore - Tripdays
+    </title>
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-QBDBHNMZN6"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-QBDBHNMZN6");
-    </script>
   </head>
   <body>
     <!-- Navbar -->
@@ -65,100 +55,228 @@
       </div>
     </nav>
 
-    <!-- City Hero Section -->
-    <section class="city-hero">
-      <div
-        class="city-image"
-        style="background-image: url('../images/singapore.jpg')"
-      ></div>
-      <h1>Plan your perfect Singapore adventure</h1>
-      <p>Find out how many days to spend in this modern city-state.</p>
+    <!-- Hero Section -->
+    <section
+      class="hero"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+          url('../images/singapore.jpg?v=1') center/cover no-repeat;
+      "
+    >
+      <div class="hero-content">
+        <h1>Plan your perfect Singapore adventure</h1>
+        <p>Find out how many days to spend in this futuristic city-state.</p>
+        <a href="#days-to-spend" class="cta-button">Discover How Many Days</a>
+      </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="city-content">
+    <!-- Days to Spend Section -->
+    <section id="days-to-spend" class="days-to-spend">
       <h2>How many days to spend in Singapore</h2>
       <p>
-        Singapore, a futuristic city-state, blends culture, nature, and
-        innovation. To fully experience Singapore, we recommend spending
-        <strong>3-5 days</strong>.
+        Singapore, a gleaming city-state, blends futuristic architecture, lush
+        gardens, and diverse cultures. To fully experience Singapore, we
+        recommend spending
+        <span class="highlight-days" itemprop="duration"
+          ><i class="fas fa-clock"></i> 3–5 days</span
+        >.
       </p>
       <p>
-        With 3-5 days, you can visit Marina Bay Sands, explore Gardens by the
-        Bay, stroll through Chinatown, and enjoy Sentosa Island. This duration
-        allows you to experience the city’s highlights without feeling rushed.
+        With 3–5 days, you can explore Marina Bay Sands, wander through Gardens
+        by the Bay, visit Sentosa Island, and dive into the city’s hawker food
+        scene. This duration lets you experience Singapore’s unique mix of
+        modernity and tradition.
       </p>
-      <div class="itinerary">
-        <h3>Suggested Itinerary</h3>
-        <ul>
-          <li>
-            <strong>Day 1:</strong> Visit Marina Bay Sands and Gardens by the
-            Bay.
-          </li>
-          <li><strong>Day 2:</strong> Explore Chinatown and Little India.</li>
-          <li>
-            <strong>Day 3:</strong> Spend a day at Sentosa Island for fun and
-            relaxation.
-          </li>
-        </ul>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section class="itinerary">
+      <h2>Suggested Itinerary for Singapore</h2>
+      <p class="itinerary-intro">
+        Here’s a suggested itinerary for 3–5 days in Singapore. Days 1–3 cover
+        the essentials, while Days 4–5 are perfect for an extended stay.
+      </p>
+      <div class="itinerary-grid" itemprop="itinerary">
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 1: Arrival and Marina Bay
+          </h3>
+          <p>
+            Arrive in Singapore and start at Marina Bay Sands—visit the SkyPark
+            Observation Deck. Explore Gardens by the Bay and watch the Supertree
+            Grove light show in the evening.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3><i class="fas fa-calendar-day"></i> Day 2: Sentosa Island</h3>
+          <p>
+            Spend the day on Sentosa Island—visit Universal Studios Singapore,
+            relax at Palawan Beach, and explore S.E.A. Aquarium. Return to the
+            city for dinner at a hawker center.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 3: Cultural Highlights
+          </h3>
+          <p>
+            Explore Chinatown and visit the Buddha Tooth Relic Temple. Then head
+            to Little India to see Sri Veeramakaliamman Temple. End the day with
+            a stroll along Clarke Quay.
+          </p>
+        </div>
+        <div class="itinerary-item extended">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 4: Nature and Wildlife
+            <span class="extended-label">Extended Stay</span>
+          </h3>
+          <p>
+            Visit the Singapore Botanic Gardens, a UNESCO site, and explore the
+            National Orchid Garden. In the afternoon, head to the Singapore Zoo
+            or Night Safari.
+          </p>
+        </div>
+        <div class="itinerary-item extended">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 5: Leisure and Departure
+            <span class="extended-label">Extended Stay</span>
+          </h3>
+          <p>
+            Spend your final day shopping on Orchard Road or visiting Jewel
+            Changi Airport to see the Rain Vortex. Depart from Singapore with
+            unforgettable memories.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- Top Attractions Section -->
-    <section class="top-attractions">
-      <h2>Top attractions in Singapore</h2>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/marina-bay-sands.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Marina Bay Sands</h3>
-          <p>Enjoy the infinity pool and stunning city views.</p>
-        </div>
-      </div>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/gardens-by-the-bay.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Gardens by the Bay</h3>
-          <p>Explore the Supertree Grove and Flower Dome.</p>
-        </div>
-      </div>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/sentosa-island.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Sentosa Island</h3>
-          <p>Relax on the beach or visit Universal Studios.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Local Tip Section -->
+    <!-- Local Tips Section -->
     <section class="local-tips">
-      <h2>Local tip</h2>
+      <h2>
+        <i class="fas fa-lightbulb"></i> Local Tips for Visiting Singapore
+      </h2>
+      <ul>
+        <li>
+          Use an EZ-Link card for seamless travel on the MRT, buses, and even
+          some taxis.
+        </li>
+        <li>
+          Eat at hawker centers like Lau Pa Sat or Newton Food Centre for
+          affordable, delicious meals—try chicken rice or laksa.
+        </li>
+        <li>
+          Singapore is strict about cleanliness—don’t litter, and avoid chewing
+          gum, as it’s banned.
+        </li>
+        <li>
+          Bring an umbrella or raincoat—Singapore’s tropical climate means
+          sudden showers are common.
+        </li>
+        <li>
+          Book tickets for attractions like Marina Bay Sands SkyPark or
+          Universal Studios in advance to avoid long queues.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Practical Information Section -->
+    <section class="practical-info">
+      <h2>
+        <i class="fas fa-map-marked-alt"></i> Practical Information for
+        Singapore
+      </h2>
+      <h3>Getting Around</h3>
       <p>
-        <i class="fas fa-lightbulb"></i> Try a hawker center meal at Lau Pa Sat
-        for affordable and delicious local dishes.
+        Singapore’s MRT is efficient and covers most attractions—use an EZ-Link
+        card for convenience. Taxis and rideshare apps like Grab are also widely
+        available.
+      </p>
+      <h3>Best Time to Visit</h3>
+      <p>
+        February to April offers pleasant weather with less rain. May to July
+        can be hot, while November to January is the wettest season due to the
+        monsoon.
+      </p>
+      <h3>Safety Tips</h3>
+      <p>
+        Singapore is one of the safest cities in the world, but follow local
+        laws—fines are steep for offenses like jaywalking or smoking in
+        prohibited areas.
       </p>
     </section>
 
     <!-- Explore More Cities Section -->
-    <section class="explore-more">
-      <h2>Keep exploring</h2>
-      <p class="section-subtitle">
-        Discover more destinations to plan your perfect trip.
-      </p>
+    <section class="discover-destinations">
+      <h2>Explore More Cities</h2>
+      <p class="section-subtitle">Discover other amazing destinations.</p>
       <div class="city-grid">
+        <a href="/cities/paris.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/paris.jpg?v=1')"
+            role="img"
+            aria-label="Eiffel Tower in Paris"
+            loading="lazy"
+          ></div>
+          <h3>Paris</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Paris</button>
+        </a>
+        <a href="/cities/london.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/london.jpg?v=1')"
+            role="img"
+            aria-label="Big Ben and the London skyline"
+            loading="lazy"
+          ></div>
+          <h3>London</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover London</button>
+        </a>
+        <a href="/cities/bangkok.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/bangkok.jpg?v=1')"
+            role="img"
+            aria-label="Grand Palace in Bangkok"
+            loading="lazy"
+          ></div>
+          <h3>Bangkok</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Bangkok</button>
+        </a>
+        <a href="/cities/new-york.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/new-york.jpg?v=1')"
+            role="img"
+            aria-label="New York City skyline with the Empire State Building"
+            loading="lazy"
+          ></div>
+          <h3>New York</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover New York</button>
+        </a>
+        <a href="/cities/tokyo.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/tokyo.jpg?v=1')"
+            role="img"
+            aria-label="Shibuya Crossing in Tokyo"
+            loading="lazy"
+          ></div>
+          <h3>Tokyo</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Tokyo</button>
+        </a>
         <a href="/cities/dubai.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/dubai.jpg')"
+            style="background-image: url('../images/dubai.jpg?v=1')"
+            role="img"
+            aria-label="Burj Khalifa in Dubai"
+            loading="lazy"
           ></div>
           <h3>Dubai</h3>
           <p><span class="days-badge">4-6 days</span></p>
@@ -167,7 +285,10 @@
         <a href="/cities/istanbul.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/istanbul.jpg')"
+            style="background-image: url('../images/istanbul.jpg?v=1')"
+            role="img"
+            aria-label="Hagia Sophia in Istanbul"
+            loading="lazy"
           ></div>
           <h3>Istanbul</h3>
           <p><span class="days-badge">4-6 days</span></p>
@@ -176,13 +297,99 @@
         <a href="/cities/rome.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/rome.jpg')"
+            style="background-image: url('../images/rome.jpg?v=1')"
+            role="img"
+            aria-label="Colosseum in Rome"
+            loading="lazy"
           ></div>
           <h3>Rome</h3>
           <p><span class="days-badge">4-6 days</span></p>
           <button class="discover-button">Discover Rome</button>
         </a>
+        <a href="/cities/barcelona.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/barcelona.jpg?v=1')"
+            role="img"
+            aria-label="Sagrada Família in Barcelona"
+            loading="lazy"
+          ></div>
+          <h3>Barcelona</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Barcelona</button>
+        </a>
+        <a href="/cities/sydney.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/sydney.jpg?v=1')"
+            role="img"
+            aria-label="Sydney Opera House"
+            loading="lazy"
+          ></div>
+          <h3>Sydney</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Sydney</button>
+        </a>
+        <a href="/cities/cape-town.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/cape-town.jpg?v=1')"
+            role="img"
+            aria-label="Table Mountain in Cape Town"
+            loading="lazy"
+          ></div>
+          <h3>Cape Town</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Cape Town</button>
+        </a>
+        <a href="/cities/rio-de-janeiro.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/rio-de-janeiro.jpg?v=1')"
+            role="img"
+            aria-label="Christ the Redeemer in Rio de Janeiro"
+            loading="lazy"
+          ></div>
+          <h3>Rio de Janeiro</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Rio de Janeiro</button>
+        </a>
+        <a href="/cities/kyoto.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/kyoto.jpg?v=1')"
+            role="img"
+            aria-label="Fushimi Inari Shrine in Kyoto"
+            loading="lazy"
+          ></div>
+          <h3>Kyoto</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Kyoto</button>
+        </a>
+        <a href="/cities/prague.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/prague.jpg?v=1')"
+            role="img"
+            aria-label="Charles Bridge in Prague"
+            loading="lazy"
+          ></div>
+          <h3>Prague</h3>
+          <p><span class="days-badge">3-5 days</span></p>
+          <button class="discover-button">Discover Prague</button>
+        </a>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>Tripdays</h3>
+        <p>Plan your perfect trip.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Tripdays. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

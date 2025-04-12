@@ -1,43 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/TravelGuide">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Plan your trip to Istanbul with Tripdays! Find out how many days to spend in Istanbul and get a tailored travel itinerary."
+      content="Plan your perfect Istanbul trip with Tripdays. Discover how many days to spend in Istanbul, a detailed 4–6 day itinerary, local tips, and practical information for this city bridging Europe and Asia."
     />
     <meta
       name="keywords"
-      content="Istanbul travel days, Istanbul itinerary, Tripdays, travel planning"
+      content="Istanbul travel, how many days in Istanbul, Istanbul itinerary 4-6 days, best local tips for Istanbul, Istanbul travel guide, Tripdays"
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Plan your perfect Istanbul adventure | Tripdays</title>
+    <title>
+      Istanbul Travel Guide: How Many Days to Spend in Istanbul - Tripdays
+    </title>
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-QBDBHNMZN6"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-QBDBHNMZN6");
-    </script>
   </head>
   <body>
     <!-- Navbar -->
@@ -65,103 +55,238 @@
       </div>
     </nav>
 
-    <!-- City Hero Section -->
-    <section class="city-hero">
-      <div
-        class="city-image"
-        style="background-image: url('../images/istanbul.jpg')"
-      ></div>
-      <h1>Plan your perfect Istanbul adventure</h1>
-      <p>
-        Find out how many days to spend in this city bridging Europe and Asia.
-      </p>
+    <!-- Hero Section -->
+    <section
+      class="hero"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+          url('../images/istanbul.jpg?v=1') center/cover no-repeat;
+      "
+    >
+      <div class="hero-content">
+        <h1>Plan your perfect Istanbul adventure</h1>
+        <p>
+          Find out how many days to spend in the city bridging Europe and Asia.
+        </p>
+        <a href="#days-to-spend" class="cta-button">Discover How Many Days</a>
+      </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="city-content">
+    <!-- Days to Spend Section -->
+    <section id="days-to-spend" class="days-to-spend">
       <h2>How many days to spend in Istanbul</h2>
       <p>
-        Istanbul, a city where East meets West, offers a rich blend of history
-        and culture. To fully experience Istanbul, we recommend spending
-        <strong>4-6 days</strong>.
+        Istanbul, a city where East meets West, offers a mesmerizing blend of
+        history, culture, and vibrant markets. To fully experience Istanbul, we
+        recommend spending
+        <span class="highlight-days" itemprop="duration"
+          ><i class="fas fa-clock"></i> 4–6 days</span
+        >.
       </p>
       <p>
-        With 4-6 days, you can visit the Hagia Sophia, explore the Grand Bazaar,
-        take a Bosphorus cruise, and wander through the historic Sultanahmet
-        district. Add a day to explore the Asian side for a complete experience.
+        With 4–6 days, you can explore the Hagia Sophia, wander through the
+        Grand Bazaar, cruise the Bosphorus, and take a day trip to the Princes’
+        Islands. This duration lets you soak in Istanbul’s unique charm.
       </p>
-      <div class="itinerary">
-        <h3>Suggested Itinerary</h3>
-        <ul>
-          <li>
-            <strong>Day 1:</strong> Visit the Hagia Sophia and Blue Mosque.
-          </li>
-          <li>
-            <strong>Day 2:</strong> Explore the Grand Bazaar and Spice Market.
-          </li>
-          <li>
-            <strong>Day 3:</strong> Take a Bosphorus cruise and visit Dolmabahçe
-            Palace.
-          </li>
-        </ul>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section class="itinerary">
+      <h2>Suggested Itinerary for Istanbul</h2>
+      <p class="itinerary-intro">
+        Here’s a suggested itinerary for 4–6 days in Istanbul. Days 1–4 cover
+        the essentials, while Days 5–6 are perfect for an extended stay.
+      </p>
+      <div class="itinerary-grid" itemprop="itinerary">
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 1: Arrival and Historic
+            Peninsula
+          </h3>
+          <p>
+            Arrive in Istanbul and visit the Hagia Sophia and Blue Mosque.
+            Explore the Sultanahmet area and end your day with dinner at a
+            rooftop restaurant with views of the Bosphorus.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 2: Topkapi Palace and
+            Bazaars
+          </h3>
+          <p>
+            Spend the morning at Topkapi Palace, then head to the Grand Bazaar
+            and Spice Bazaar to shop for souvenirs. Enjoy Turkish tea at a local
+            café.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3><i class="fas fa-calendar-day"></i> Day 3: Bosphorus Cruise</h3>
+          <p>
+            Take a Bosphorus cruise to see Istanbul from the water, passing
+            landmarks like Dolmabahçe Palace. In the afternoon, visit the
+            Basilica Cistern and explore Beyoğlu.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 4: Day Trip to Princes’
+            Islands
+          </h3>
+          <p>
+            Take a ferry to the Princes’ Islands for a peaceful escape. Rent a
+            bike on Büyükada, enjoy a seafood lunch, and return to Istanbul for
+            the evening.
+          </p>
+        </div>
+        <div class="itinerary-item extended">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 5: Asian Side
+            <span class="extended-label">Extended Stay</span>
+          </h3>
+          <p>
+            Explore the Asian side of Istanbul—visit Kadıköy Market, sample
+            street food, and relax at Moda Park with views of the Marmara Sea.
+          </p>
+        </div>
+        <div class="itinerary-item extended">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 6: Leisure and Departure
+            <span class="extended-label">Extended Stay</span>
+          </h3>
+          <p>
+            Spend your final day visiting Taksim Square and Istiklal Avenue for
+            shopping and people-watching. Depart from Istanbul with
+            unforgettable memories.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- Top Attractions Section -->
-    <section class="top-attractions">
-      <h2>Top attractions in Istanbul</h2>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/hagia-sophia.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Hagia Sophia</h3>
-          <p>Marvel at this architectural masterpiece with a rich history.</p>
-        </div>
-      </div>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/grand-bazaar.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Grand Bazaar</h3>
-          <p>Shop for souvenirs in one of the world’s oldest markets.</p>
-        </div>
-      </div>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/bosphorus.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Bosphorus Cruise</h3>
-          <p>Enjoy stunning views of Istanbul from the water.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Local Tip Section -->
+    <!-- Local Tips Section -->
     <section class="local-tips">
-      <h2>Local tip</h2>
+      <h2><i class="fas fa-lightbulb"></i> Local Tips for Visiting Istanbul</h2>
+      <ul>
+        <li>
+          Get an Istanbulkart for easy access to public transport, including
+          ferries, trams, and buses.
+        </li>
+        <li>
+          Haggle at the Grand Bazaar—start at 50% of the asking price and
+          negotiate politely.
+        </li>
+        <li>
+          Try authentic Turkish street food like simit (sesame bread rings) and
+          döner kebab from local vendors.
+        </li>
+        <li>
+          Dress modestly when visiting mosques—women should carry a scarf to
+          cover their hair, and everyone should remove shoes.
+        </li>
+        <li>
+          Be cautious of scams around tourist areas like Sultanahmet, such as
+          fake guides or overpriced taxis.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Practical Information Section -->
+    <section class="practical-info">
+      <h2>
+        <i class="fas fa-map-marked-alt"></i> Practical Information for Istanbul
+      </h2>
+      <h3>Getting Around</h3>
       <p>
-        <i class="fas fa-lightbulb"></i> Try Turkish tea or coffee at a local
-        café for an authentic taste of Istanbul.
+        Istanbul’s trams, ferries, and metro are efficient—use an Istanbulkart
+        for seamless travel. Taxis are available but insist on the meter to
+        avoid being overcharged.
+      </p>
+      <h3>Best Time to Visit</h3>
+      <p>
+        Spring (April to May) and autumn (September to November) offer mild
+        weather and fewer crowds. Summer can be hot, while winter is chilly but
+        great for indoor attractions.
+      </p>
+      <h3>Safety Tips</h3>
+      <p>
+        Istanbul is generally safe, but watch for pickpockets in crowded areas
+        like the Grand Bazaar and Taksim Square. Stick to well-lit areas at
+        night, especially in touristy neighborhoods.
       </p>
     </section>
 
     <!-- Explore More Cities Section -->
-    <section class="explore-more">
-      <h2>Keep exploring</h2>
-      <p class="section-subtitle">
-        Discover more destinations to plan your perfect trip.
-      </p>
+    <section class="discover-destinations">
+      <h2>Explore More Cities</h2>
+      <p class="section-subtitle">Discover other amazing destinations.</p>
       <div class="city-grid">
+        <a href="/cities/paris.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/paris.jpg?v=1')"
+            role="img"
+            aria-label="Eiffel Tower in Paris"
+            loading="lazy"
+          ></div>
+          <h3>Paris</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Paris</button>
+        </a>
+        <a href="/cities/london.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/london.jpg?v=1')"
+            role="img"
+            aria-label="Big Ben and the London skyline"
+            loading="lazy"
+          ></div>
+          <h3>London</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover London</button>
+        </a>
+        <a href="/cities/bangkok.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/bangkok.jpg?v=1')"
+            role="img"
+            aria-label="Grand Palace in Bangkok"
+            loading="lazy"
+          ></div>
+          <h3>Bangkok</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Bangkok</button>
+        </a>
+        <a href="/cities/new-york.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/new-york.jpg?v=1')"
+            role="img"
+            aria-label="New York City skyline with the Empire State Building"
+            loading="lazy"
+          ></div>
+          <h3>New York</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover New York</button>
+        </a>
+        <a href="/cities/tokyo.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/tokyo.jpg?v=1')"
+            role="img"
+            aria-label="Shibuya Crossing in Tokyo"
+            loading="lazy"
+          ></div>
+          <h3>Tokyo</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Tokyo</button>
+        </a>
         <a href="/cities/dubai.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/dubai.jpg')"
+            style="background-image: url('../images/dubai.jpg?v=1')"
+            role="img"
+            aria-label="Burj Khalifa in Dubai"
+            loading="lazy"
           ></div>
           <h3>Dubai</h3>
           <p><span class="days-badge">4-6 days</span></p>
@@ -170,7 +295,10 @@
         <a href="/cities/singapore.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/singapore.jpg')"
+            style="background-image: url('../images/singapore.jpg?v=1')"
+            role="img"
+            aria-label="Marina Bay Sands in Singapore"
+            loading="lazy"
           ></div>
           <h3>Singapore</h3>
           <p><span class="days-badge">3-5 days</span></p>
@@ -179,13 +307,99 @@
         <a href="/cities/rome.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/rome.jpg')"
+            style="background-image: url('../images/rome.jpg?v=1')"
+            role="img"
+            aria-label="Colosseum in Rome"
+            loading="lazy"
           ></div>
           <h3>Rome</h3>
           <p><span class="days-badge">4-6 days</span></p>
           <button class="discover-button">Discover Rome</button>
         </a>
+        <a href="/cities/barcelona.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/barcelona.jpg?v=1')"
+            role="img"
+            aria-label="Sagrada Família in Barcelona"
+            loading="lazy"
+          ></div>
+          <h3>Barcelona</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Barcelona</button>
+        </a>
+        <a href="/cities/sydney.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/sydney.jpg?v=1')"
+            role="img"
+            aria-label="Sydney Opera House"
+            loading="lazy"
+          ></div>
+          <h3>Sydney</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Sydney</button>
+        </a>
+        <a href="/cities/cape-town.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/cape-town.jpg?v=1')"
+            role="img"
+            aria-label="Table Mountain in Cape Town"
+            loading="lazy"
+          ></div>
+          <h3>Cape Town</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Cape Town</button>
+        </a>
+        <a href="/cities/rio-de-janeiro.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/rio-de-janeiro.jpg?v=1')"
+            role="img"
+            aria-label="Christ the Redeemer in Rio de Janeiro"
+            loading="lazy"
+          ></div>
+          <h3>Rio de Janeiro</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Rio de Janeiro</button>
+        </a>
+        <a href="/cities/kyoto.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/kyoto.jpg?v=1')"
+            role="img"
+            aria-label="Fushimi Inari Shrine in Kyoto"
+            loading="lazy"
+          ></div>
+          <h3>Kyoto</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Kyoto</button>
+        </a>
+        <a href="/cities/prague.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/prague.jpg?v=1')"
+            role="img"
+            aria-label="Charles Bridge in Prague"
+            loading="lazy"
+          ></div>
+          <h3>Prague</h3>
+          <p><span class="days-badge">3-5 days</span></p>
+          <button class="discover-button">Discover Prague</button>
+        </a>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>Tripdays</h3>
+        <p>Plan your perfect trip.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Tripdays. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
