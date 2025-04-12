@@ -1,43 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/TravelGuide">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Plan your trip to Rio de Janeiro with Tripdays! Find out how many days to spend in Rio de Janeiro and get a tailored travel itinerary."
+      content="Plan your perfect Rio de Janeiro trip with Tripdays. Discover how many days to spend in Rio, a detailed 5–7 day itinerary, local tips, and practical information for Brazil's vibrant coastal city."
     />
     <meta
       name="keywords"
-      content="Rio de Janeiro travel days, Rio de Janeiro itinerary, Tripdays, travel planning"
+      content="Rio de Janeiro travel, how many days in Rio, Rio itinerary 5-7 days, best local tips for Rio de Janeiro, Rio travel guide, Tripdays"
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Plan your perfect Rio de Janeiro adventure | Tripdays</title>
+    <title>
+      Rio de Janeiro Travel Guide: How Many Days to Spend in Rio - Tripdays
+    </title>
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-QBDBHNMZN6"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-QBDBHNMZN6");
-    </script>
   </head>
   <body>
     <!-- Navbar -->
@@ -65,103 +55,311 @@
       </div>
     </nav>
 
-    <!-- City Hero Section -->
-    <section class="city-hero">
-      <div
-        class="city-image"
-        style="background-image: url('../images/rio-de-janeiro.jpg')"
-      ></div>
-      <h1>Plan your perfect Rio de Janeiro adventure</h1>
-      <p>Find out how many days to spend in Brazil’s vibrant coastal city.</p>
+    <!-- Hero Section -->
+    <section
+      class="hero"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+          url('../images/rio-de-janeiro.jpg?v=1') center/cover no-repeat;
+      "
+    >
+      <div class="hero-content">
+        <h1>Plan your perfect Rio de Janeiro adventure</h1>
+        <p>Find out how many days to spend in Brazil's vibrant coastal city.</p>
+        <a href="#days-to-spend" class="cta-button">Discover How Many Days</a>
+      </div>
     </section>
 
-    <!-- Main Content -->
-    <section class="city-content">
+    <!-- Days to Spend Section -->
+    <section id="days-to-spend" class="days-to-spend">
       <h2>How many days to spend in Rio de Janeiro</h2>
       <p>
-        Rio de Janeiro, with its stunning beaches and lively culture, is a
-        vibrant destination. To fully experience Rio, we recommend spending
-        <strong>5-7 days</strong>.
+        Rio de Janeiro, with its stunning beaches, lush mountains, and lively
+        culture, is a captivating destination in Brazil. To fully experience
+        Rio, we recommend spending
+        <span class="highlight-days" itemprop="duration"
+          ><i class="fas fa-clock"></i> 5–7 days</span
+        >.
       </p>
       <p>
-        With 5-7 days, you can visit Christ the Redeemer, relax on Copacabana
-        Beach, explore Sugarloaf Mountain, and experience the energy of Carnival
-        if you’re visiting during the season. Add a day to explore the Santa
-        Teresa neighborhood for a taste of local life.
+        With 5–7 days, you can visit Christ the Redeemer, relax on Copacabana
+        Beach, explore the Santa Teresa neighborhood, and take a day trip to
+        Petrópolis or Ilha Grande. This duration lets you immerse yourself in
+        Rio’s vibrant energy.
       </p>
-      <div class="itinerary">
-        <h3>Suggested Itinerary</h3>
-        <ul>
-          <li>
-            <strong>Day 1:</strong> Visit Christ the Redeemer and explore
-            Corcovado.
-          </li>
-          <li>
-            <strong>Day 2:</strong> Relax on Copacabana and Ipanema Beaches.
-          </li>
-          <li>
-            <strong>Day 3:</strong> Take a cable car to Sugarloaf Mountain for
-            sunset views.
-          </li>
-        </ul>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section class="itinerary">
+      <h2>Suggested Itinerary for Rio de Janeiro</h2>
+      <p class="itinerary-intro">
+        Here’s a suggested itinerary for 5–7 days in Rio de Janeiro. Days 1–5
+        cover the essentials, while Days 6–7 are perfect for an extended stay.
+      </p>
+      <div class="itinerary-grid" itemprop="itinerary">
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 1: Arrival and Copacabana
+          </h3>
+          <p>
+            Arrive in Rio and head to Copacabana Beach to relax and soak in the
+            atmosphere. Walk along the iconic boardwalk and enjoy dinner at a
+            beachfront restaurant.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 2: Christ the Redeemer and
+            Sugarloaf Mountain
+          </h3>
+          <p>
+            Visit Christ the Redeemer in the morning for stunning views. In the
+            afternoon, take the cable car up Sugarloaf Mountain to watch the
+            sunset over the city.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 3: Downtown and Santa Teresa
+          </h3>
+          <p>
+            Explore downtown Rio—visit the Selarón Steps and the Metropolitan
+            Cathedral. Then head to Santa Teresa for its bohemian vibe, art
+            galleries, and charming cafés.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 4: Day Trip to Ilha Grande
+          </h3>
+          <p>
+            Take a day trip to Ilha Grande for pristine beaches and hiking
+            trails. Relax at Lopes Mendes Beach and enjoy the island’s natural
+            beauty before returning to Rio.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 5: Ipanema and Local Culture
+          </h3>
+          <p>
+            Spend the morning at Ipanema Beach and visit the nearby Hippie
+            Market. In the evening, experience Rio’s nightlife with samba at a
+            local club in Lapa.
+          </p>
+        </div>
+        <div class="itinerary-item extended">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 6: Hidden Gems
+            <span class="extended-label">Extended Stay</span>
+          </h3>
+          <p>
+            Explore the Tijuca National Park for a hike to Pico da Tijuca,
+            offering panoramic views. In the afternoon, visit the Botanical
+            Garden to see exotic plants.
+          </p>
+        </div>
+        <div class="itinerary-item extended">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 7: Leisure and Departure
+            <span class="extended-label">Extended Stay</span>
+          </h3>
+          <p>
+            Spend your final day relaxing at Leblon Beach or shopping for
+            souvenirs in Copacabana. Depart from Rio with unforgettable
+            memories.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- Top Attractions Section -->
-    <section class="top-attractions">
-      <h2>Top attractions in Rio de Janeiro</h2>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/christ-the-redeemer.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Christ the Redeemer</h3>
-          <p>Iconic statue with panoramic views of the city.</p>
-        </div>
-      </div>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/copacabana-beach.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Copacabana Beach</h3>
-          <p>Relax on this famous beach with a lively atmosphere.</p>
-        </div>
-      </div>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/sugarloaf-mountain.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Sugarloaf Mountain</h3>
-          <p>Take a cable car for stunning views of Rio’s coastline.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Local Tip Section -->
+    <!-- Local Tips Section -->
     <section class="local-tips">
-      <h2>Local tip</h2>
+      <h2>
+        <i class="fas fa-lightbulb"></i> Local Tips for Visiting Rio de Janeiro
+      </h2>
+      <ul>
+        <li>
+          Learn a few Portuguese phrases—locals appreciate the effort, and
+          English isn’t widely spoken outside tourist areas.
+        </li>
+        <li>
+          Use rideshare apps like Uber or 99 for safe and reliable
+          transportation, especially at night.
+        </li>
+        <li>
+          Try local street food like pão de queijo (cheese bread) or açaí bowls
+          for a refreshing treat.
+        </li>
+        <li>
+          Be cautious with valuables on beaches—don’t leave items unattended,
+          and consider using a money belt.
+        </li>
+        <li>
+          Visit Christ the Redeemer early in the morning to avoid crowds and
+          enjoy cooler weather.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Practical Information Section -->
+    <section class="practical-info">
+      <h2>
+        <i class="fas fa-map-marked-alt"></i> Practical Information for Rio de
+        Janeiro
+      </h2>
+      <h3>Getting Around</h3>
       <p>
-        <i class="fas fa-lightbulb"></i> Try a caipirinha, Brazil’s national
-        cocktail, at a beachside kiosk.
+        Rio’s metro is safe and efficient for central areas like Copacabana and
+        Ipanema. For other areas, use rideshare apps like Uber or 99, as taxis
+        can be less reliable.
+      </p>
+      <h3>Best Time to Visit</h3>
+      <p>
+        February to April offers warm weather with fewer crowds (except during
+        Carnival). Winter (June to August) is cooler and less rainy, while
+        summer (December to February) is hot and humid.
+      </p>
+      <h3>Safety Tips</h3>
+      <p>
+        Rio is generally safe for tourists, but avoid walking alone in isolated
+        areas, especially at night. Stick to well-populated areas and be
+        cautious of pickpocketing on beaches and in busy spots.
       </p>
     </section>
 
     <!-- Explore More Cities Section -->
-    <section class="explore-more">
-      <h2>Keep exploring</h2>
-      <p class="section-subtitle">
-        Discover more destinations to plan your perfect trip.
-      </p>
+    <section class="discover-destinations">
+      <h2>Explore More Cities</h2>
+      <p class="section-subtitle">Discover other amazing destinations.</p>
       <div class="city-grid">
+        <a href="/cities/paris.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/paris.jpg?v=1')"
+            role="img"
+            aria-label="Eiffel Tower in Paris"
+            loading="lazy"
+          ></div>
+          <h3>Paris</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Paris</button>
+        </a>
+        <a href="/cities/london.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/london.jpg?v=1')"
+            role="img"
+            aria-label="Big Ben and the London skyline"
+            loading="lazy"
+          ></div>
+          <h3>London</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover London</button>
+        </a>
+        <a href="/cities/bangkok.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/bangkok.jpg?v=1')"
+            role="img"
+            aria-label="Grand Palace in Bangkok"
+            loading="lazy"
+          ></div>
+          <h3>Bangkok</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Bangkok</button>
+        </a>
+        <a href="/cities/new-york.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/new-york.jpg?v=1')"
+            role="img"
+            aria-label="New York City skyline with the Empire State Building"
+            loading="lazy"
+          ></div>
+          <h3>New York</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover New York</button>
+        </a>
+        <a href="/cities/tokyo.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/tokyo.jpg?v=1')"
+            role="img"
+            aria-label="Shibuya Crossing in Tokyo"
+            loading="lazy"
+          ></div>
+          <h3>Tokyo</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Tokyo</button>
+        </a>
+        <a href="/cities/dubai.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/dubai.jpg?v=1')"
+            role="img"
+            aria-label="Burj Khalifa in Dubai"
+            loading="lazy"
+          ></div>
+          <h3>Dubai</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Dubai</button>
+        </a>
+        <a href="/cities/istanbul.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/istanbul.jpg?v=1')"
+            role="img"
+            aria-label="Hagia Sophia in Istanbul"
+            loading="lazy"
+          ></div>
+          <h3>Istanbul</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Istanbul</button>
+        </a>
+        <a href="/cities/singapore.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/singapore.jpg?v=1')"
+            role="img"
+            aria-label="Marina Bay Sands in Singapore"
+            loading="lazy"
+          ></div>
+          <h3>Singapore</h3>
+          <p><span class="days-badge">3-5 days</span></p>
+          <button class="discover-button">Discover Singapore</button>
+        </a>
+        <a href="/cities/rome.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/rome.jpg?v=1')"
+            role="img"
+            aria-label="Colosseum in Rome"
+            loading="lazy"
+          ></div>
+          <h3>Rome</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Rome</button>
+        </a>
+        <a href="/cities/barcelona.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/barcelona.jpg?v=1')"
+            role="img"
+            aria-label="Sagrada Família in Barcelona"
+            loading="lazy"
+          ></div>
+          <h3>Barcelona</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Barcelona</button>
+        </a>
         <a href="/cities/sydney.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/sydney.jpg')"
+            style="background-image: url('../images/sydney.jpg?v=1')"
+            role="img"
+            aria-label="Sydney Opera House"
+            loading="lazy"
           ></div>
           <h3>Sydney</h3>
           <p><span class="days-badge">5-7 days</span></p>
@@ -170,7 +368,10 @@
         <a href="/cities/cape-town.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/cape-town.jpg')"
+            style="background-image: url('../images/cape-town.jpg?v=1')"
+            role="img"
+            aria-label="Table Mountain in Cape Town"
+            loading="lazy"
           ></div>
           <h3>Cape Town</h3>
           <p><span class="days-badge">5-7 days</span></p>
@@ -179,13 +380,39 @@
         <a href="/cities/kyoto.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/kyoto.jpg')"
+            style="background-image: url('../images/kyoto.jpg?v=1')"
+            role="img"
+            aria-label="Fushimi Inari Shrine in Kyoto"
+            loading="lazy"
           ></div>
           <h3>Kyoto</h3>
           <p><span class="days-badge">4-6 days</span></p>
           <button class="discover-button">Discover Kyoto</button>
         </a>
+        <a href="/cities/prague.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/prague.jpg?v=1')"
+            role="img"
+            aria-label="Charles Bridge in Prague"
+            loading="lazy"
+          ></div>
+          <h3>Prague</h3>
+          <p><span class="days-badge">3-5 days</span></p>
+          <button class="discover-button">Discover Prague</button>
+        </a>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>Tripdays</h3>
+        <p>Plan your perfect trip.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Tripdays. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
