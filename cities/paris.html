@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/TravelGuide">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Plan your perfect trip to Paris with Tripdays. Find out how many days to spend in the City of Lights."
+      content="Plan your perfect Paris trip with Tripdays. Discover how many days to spend in Paris, a detailed 4–6 day itinerary, local tips, and practical information for the City of Lights."
     />
     <meta
       name="keywords"
-      content="Paris travel, how many days in Paris, Paris itinerary, Tripdays"
+      content="Paris travel, how many days in Paris, Paris itinerary 4-6 days, best local tips for Paris, Paris travel guide, Tripdays"
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Paris - Tripdays</title>
+    <title>
+      Paris Travel Guide: How Many Days to Spend in Paris - Tripdays
+    </title>
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -56,23 +58,27 @@
     <section
       class="hero"
       style="
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
           url('../images/paris.jpg?v=1') center/cover no-repeat;
       "
     >
-      <div class="hero-content">
+      <div class="hero-content animate-on-scroll">
         <h1>Plan your perfect Paris adventure</h1>
-        <p>Find out how many days in the City of Lights.</p>
+        <p>Find out how many days to spend in the City of Lights.</p>
+        <a href="#days-to-spend" class="cta-button">Discover How Many Days</a>
       </div>
     </section>
 
     <!-- Days to Spend Section -->
-    <section class="days-to-spend">
+    <section id="days-to-spend" class="days-to-spend animate-on-scroll">
       <h2>How many days to spend in Paris</h2>
       <p>
         Paris, the City of Lights, is a dream destination with its iconic
         landmarks, charming streets, and world-class cuisine. To fully
-        experience Paris, we recommend spending 4–6 days.
+        experience Paris, we recommend spending
+        <span class="highlight-days" itemprop="duration"
+          ><i class="fas fa-clock"></i> 4–6 days</span
+        >.
       </p>
       <p>
         With 4–6 days, you can visit the Eiffel Tower, explore the Louvre
@@ -83,51 +89,65 @@
     </section>
 
     <!-- Itinerary Section -->
-    <section class="itinerary">
+    <section class="itinerary animate-on-scroll">
       <h2>Suggested Itinerary for Paris</h2>
-      <div class="itinerary-grid">
-        <div class="itinerary-item">
-          <h3>Day 1: Arrival and Exploration</h3>
+      <p class="itinerary-intro">
+        Here’s a suggested itinerary for 4–6 days in Paris. Days 1–4 cover the
+        essentials, while Days 5–6 are perfect for an extended stay.
+      </p>
+      <div class="itinerary-grid" itemprop="itinerary">
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 1: Arrival and Exploration
+          </h3>
           <p>
             Arrive in Paris, check into your accommodation, and take a leisurely
             stroll along the Seine River. Visit Notre-Dame Cathedral and enjoy a
             coffee at a local café.
           </p>
         </div>
-        <div class="itinerary-item">
-          <h3>Day 2: Iconic Landmarks</h3>
+        <div class="itinerary-item essential">
+          <h3><i class="fas fa-calendar-day"></i> Day 2: Iconic Landmarks</h3>
           <p>
             Visit the Eiffel Tower in the morning, then head to the Arc de
             Triomphe and walk down the Champs-Élysées. End your day with a
             sunset cruise on the Seine.
           </p>
         </div>
-        <div class="itinerary-item">
-          <h3>Day 3: Art and Culture</h3>
+        <div class="itinerary-item essential">
+          <h3><i class="fas fa-calendar-day"></i> Day 3: Art and Culture</h3>
           <p>
             Spend the day at the Louvre Museum, followed by a visit to the Musée
             d’Orsay. In the evening, explore the Montmartre district and visit
             the Sacré-Cœur Basilica.
           </p>
         </div>
-        <div class="itinerary-item">
-          <h3>Day 4: Day Trip to Versailles</h3>
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 4: Day Trip to Versailles
+          </h3>
           <p>
             Take a day trip to the Palace of Versailles. Explore the palace,
             gardens, and the Trianon estates. Return to Paris in the evening for
             dinner in the Latin Quarter.
           </p>
         </div>
-        <div class="itinerary-item">
-          <h3>Day 5: Hidden Gems</h3>
+        <div class="itinerary-item extended">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 5: Hidden Gems
+            <span class="extended-label">Extended Stay</span>
+          </h3>
           <p>
             Discover hidden gems like the Marais district, visit the Picasso
             Museum, and enjoy a picnic in the Luxembourg Gardens. End your day
             with a visit to a local patisserie.
           </p>
         </div>
-        <div class="itinerary-item">
-          <h3>Day 6: Leisure and Departure</h3>
+        <div class="itinerary-item extended">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 6: Leisure and Departure
+            <span class="extended-label">Extended Stay</span>
+          </h3>
           <p>
             Spend your final day shopping at Galeries Lafayette, visiting the
             Palais Garnier, or relaxing in a park. Depart from Paris with
@@ -137,8 +157,61 @@
       </div>
     </section>
 
+    <!-- Local Tips Section -->
+    <section class="local-tips animate-on-scroll">
+      <h2><i class="fas fa-lightbulb"></i> Local Tips for Visiting Paris</h2>
+      <ul>
+        <li>
+          Try a café au lait at a local Parisian café, but avoid touristy spots
+          near the Eiffel Tower—head to the Marais for a more authentic
+          experience.
+        </li>
+        <li>
+          Parisians appreciate a polite greeting—say "Bonjour" when entering a
+          shop or café, even if your French isn’t perfect.
+        </li>
+        <li>
+          Save money on dining by opting for the “formule” (prix-fixe menu) at
+          lunch, which is often more affordable than dinner.
+        </li>
+        <li>
+          Visit the Eiffel Tower at night to see it sparkle on the hour—it’s a
+          magical experience.
+        </li>
+        <li>
+          Bring comfortable walking shoes; Paris is best explored on foot,
+          especially in neighborhoods like Montmartre and Le Marais.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Practical Information Section -->
+    <section class="practical-info animate-on-scroll">
+      <h2>
+        <i class="fas fa-map-marked-alt"></i> Practical Information for Paris
+      </h2>
+      <h3>Getting Around</h3>
+      <p>
+        The Paris Metro is the most efficient way to get around. Buy a 10-ticket
+        ‘carnet’ to save money, or consider a Paris Visite pass for unlimited
+        travel.
+      </p>
+      <h3>Best Time to Visit</h3>
+      <p>
+        Spring (April to June) and fall (September to October) are the best
+        times to visit Paris, with mild weather and fewer crowds. Summer is peak
+        season, so expect larger crowds and higher prices.
+      </p>
+      <h3>Safety Tips</h3>
+      <p>
+        Be mindful of pickpockets, especially in crowded tourist areas like the
+        Metro and near the Eiffel Tower. Keep your belongings secure and avoid
+        scams like fake petitions.
+      </p>
+    </section>
+
     <!-- Explore More Cities Section -->
-    <section class="explore-more">
+    <section class="explore-more animate-on-scroll">
       <h2>Explore More Cities</h2>
       <p class="section-subtitle">Discover other amazing destinations.</p>
       <div class="city-grid">
@@ -146,6 +219,9 @@
           <div
             class="city-image"
             style="background-image: url('../images/london.jpg?v=1')"
+            role="img"
+            aria-label="Big Ben and the London skyline"
+            loading="lazy"
           ></div>
           <h3>London</h3>
           <p><span class="days-badge">5-7 days</span></p>
@@ -155,6 +231,9 @@
           <div
             class="city-image"
             style="background-image: url('../images/bangkok.jpg?v=1')"
+            role="img"
+            aria-label="Grand Palace in Bangkok"
+            loading="lazy"
           ></div>
           <h3>Bangkok</h3>
           <p><span class="days-badge">5-7 days</span></p>
@@ -164,6 +243,9 @@
           <div
             class="city-image"
             style="background-image: url('../images/new-york.jpg?v=1')"
+            role="img"
+            aria-label="New York City skyline with the Empire State Building"
+            loading="lazy"
           ></div>
           <h3>New York</h3>
           <p><span class="days-badge">5-7 days</span></p>
@@ -173,6 +255,9 @@
           <div
             class="city-image"
             style="background-image: url('../images/tokyo.jpg?v=1')"
+            role="img"
+            aria-label="Shibuya Crossing in Tokyo"
+            loading="lazy"
           ></div>
           <h3>Tokyo</h3>
           <p><span class="days-badge">5-7 days</span></p>
@@ -182,6 +267,9 @@
           <div
             class="city-image"
             style="background-image: url('../images/dubai.jpg?v=1')"
+            role="img"
+            aria-label="Burj Khalifa in Dubai"
+            loading="lazy"
           ></div>
           <h3>Dubai</h3>
           <p><span class="days-badge">4-6 days</span></p>
@@ -191,6 +279,9 @@
           <div
             class="city-image"
             style="background-image: url('../images/istanbul.jpg?v=1')"
+            role="img"
+            aria-label="Hagia Sophia in Istanbul"
+            loading="lazy"
           ></div>
           <h3>Istanbul</h3>
           <p><span class="days-badge">4-6 days</span></p>
@@ -200,6 +291,9 @@
           <div
             class="city-image"
             style="background-image: url('../images/singapore.jpg?v=1')"
+            role="img"
+            aria-label="Marina Bay Sands in Singapore"
+            loading="lazy"
           ></div>
           <h3>Singapore</h3>
           <p><span class="days-badge">3-5 days</span></p>
@@ -209,6 +303,9 @@
           <div
             class="city-image"
             style="background-image: url('../images/rome.jpg?v=1')"
+            role="img"
+            aria-label="Colosseum in Rome"
+            loading="lazy"
           ></div>
           <h3>Rome</h3>
           <p><span class="days-badge">4-6 days</span></p>
@@ -218,6 +315,9 @@
           <div
             class="city-image"
             style="background-image: url('../images/barcelona.jpg?v=1')"
+            role="img"
+            aria-label="Sagrada Família in Barcelona"
+            loading="lazy"
           ></div>
           <h3>Barcelona</h3>
           <p><span class="days-badge">4-6 days</span></p>
@@ -227,6 +327,9 @@
           <div
             class="city-image"
             style="background-image: url('../images/sydney.jpg?v=1')"
+            role="img"
+            aria-label="Sydney Opera House"
+            loading="lazy"
           ></div>
           <h3>Sydney</h3>
           <p><span class="days-badge">5-7 days</span></p>
@@ -236,6 +339,9 @@
           <div
             class="city-image"
             style="background-image: url('../images/cape-town.jpg?v=1')"
+            role="img"
+            aria-label="Table Mountain in Cape Town"
+            loading="lazy"
           ></div>
           <h3>Cape Town</h3>
           <p><span class="days-badge">5-7 days</span></p>
@@ -245,6 +351,9 @@
           <div
             class="city-image"
             style="background-image: url('../images/rio-de-janeiro.jpg?v=1')"
+            role="img"
+            aria-label="Christ the Redeemer in Rio de Janeiro"
+            loading="lazy"
           ></div>
           <h3>Rio de Janeiro</h3>
           <p><span class="days-badge">5-7 days</span></p>
@@ -254,6 +363,9 @@
           <div
             class="city-image"
             style="background-image: url('../images/kyoto.jpg?v=1')"
+            role="img"
+            aria-label="Fushimi Inari Shrine in Kyoto"
+            loading="lazy"
           ></div>
           <h3>Kyoto</h3>
           <p><span class="days-badge">4-6 days</span></p>
@@ -263,6 +375,9 @@
           <div
             class="city-image"
             style="background-image: url('../images/prague.jpg?v=1')"
+            role="img"
+            aria-label="Charles Bridge in Prague"
+            loading="lazy"
           ></div>
           <h3>Prague</h3>
           <p><span class="days-badge">3-5 days</span></p>
@@ -276,10 +391,33 @@
       <div class="footer-content">
         <h3>Tripdays</h3>
         <p>Plan your perfect trip.</p>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
       </div>
       <div class="footer-bottom">
         <p>© 2025 Tripdays. All rights reserved.</p>
       </div>
     </footer>
+
+    <!-- Script for navbar scroll effect -->
+    <script>
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>
