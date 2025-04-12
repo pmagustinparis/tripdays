@@ -1,95 +1,140 @@
-/* styles.css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
+/* Estilos base para todo el sitio */
 body {
   font-family: "Poppins", sans-serif;
-  color: #333;
-  line-height: 1.6;
+  color: #2d2d2d;
+  line-height: 1.8;
+  background-color: #fafafa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+/* Asegurar que los elementos sean visibles por defecto */
+section,
+h1,
+h2,
+h3,
+p,
+a,
+button,
+span,
+div {
+  opacity: 1 !important;
+  display: block;
+  visibility: visible;
+}
+
+/* Navbar (global para todas las páginas) */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
   top: 0;
   z-index: 1000;
+  transition: background-color 0.3s;
 }
 
 .navbar-logo {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
-  color: #1a3c5a;
+  color: #2a6df4;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-logo:hover {
+  color: #1a5dc4;
 }
 
 .navbar-menu select {
-  padding: 10px;
+  padding: 12px 20px;
   font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid #1a3c5a;
-  background-color: #1a3c5a;
-  color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 25px;
+  background-color: #fff;
   cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+.navbar-menu select:focus {
+  outline: none;
+  border-color: #2a6df4;
+  box-shadow: 0 0 0 3px rgba(42, 109, 244, 0.1);
+}
+
+/* Hero Section (usada en index.html y páginas de ciudades) */
 .hero {
-  height: 500px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/hero-bg.jpg") center/cover no-repeat;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
 }
 
 .hero-content h1 {
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 700;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
 }
 
 .hero-content p {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
 }
 
 .cta-button {
   display: inline-block;
-  padding: 12px 24px;
-  background-color: #1a3c5a;
-  color: #fff;
+  padding: 14px 30px;
+  background-color: #2a6df4;
+  color: #ffffff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 50px;
   font-size: 18px;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
+  font-weight: 500;
+  box-shadow: 0 4px 15px rgba(42, 109, 244, 0.3);
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
 
 .cta-button:hover {
-  background-color: #2a5c8a;
+  background-color: #1a5dc4;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(42, 109, 244, 0.4);
 }
 
+/* Benefits Section (específica de index.html) */
 .benefits {
-  padding: 60px 40px;
+  padding: 80px 40px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #f5f7fa;
 }
 
 .benefits h2 {
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 700;
-  color: #1a3c5a;
+  color: #2d2d2d;
   margin-bottom: 40px;
 }
 
@@ -103,142 +148,239 @@ body {
 
 .benefit-item {
   padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .benefit-item i {
   font-size: 40px;
-  color: #1a3c5a;
+  color: #2a6df4;
   margin-bottom: 15px;
 }
 
 .benefit-item h3 {
   font-size: 20px;
-  font-weight: 500;
-  color: #1a3c5a;
+  font-weight: 600;
+  color: #2d2d2d;
   margin-bottom: 10px;
 }
 
 .benefit-item p {
   font-size: 16px;
-  color: #666;
+  color: #4a4a4a;
 }
 
+/* Discover Destinations / Explore More Cities (global para index.html y páginas de ciudades) */
 .discover-destinations {
-  padding: 60px 40px;
+  padding: 80px 40px;
+  background-color: #fff;
   text-align: center;
 }
 
 .discover-destinations h2 {
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 700;
-  margin-bottom: 10px;
-  color: #1a3c5a;
+  margin-bottom: 15px;
+  color: #2d2d2d;
 }
 
 .section-subtitle {
   font-size: 18px;
-  color: #666;
-  margin-bottom: 40px;
+  color: #4a4a4a;
+  margin-bottom: 50px;
 }
 
 .city-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
 .city-card {
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
   text-decoration: none;
-  transition: transform 0.3s ease;
+  color: #2d2d2d;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .city-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .city-image {
-  height: 200px;
+  height: 220px;
   background-size: cover;
   background-position: center;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.city-card:hover .city-image {
+  transform: scale(1.03);
 }
 
 .city-card h3 {
-  font-size: 24px;
-  font-weight: 500;
-  color: #1a3c5a;
-  margin: 15px 0 10px;
-}
-
-.city-card p {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2d2d2d;
 }
 
 .days-badge {
-  background-color: #1a3c5a;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 15px;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #e6f0fa;
+  border-radius: 20px;
   font-size: 14px;
+  font-weight: 500;
+  color: #2a6df4;
+  margin-bottom: 15px;
 }
 
 .discover-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #1a3c5a;
+  padding: 12px 25px;
+  background-color: #2a6df4;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
-  margin-bottom: 15px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .discover-button:hover {
-  background-color: #2a5c8a;
+  background-color: #1a5dc4;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(42, 109, 244, 0.3);
 }
 
-/* Footer Styles */
+/* Footer (global para todas las páginas) */
 .footer {
-  background-color: #1a3c5a;
+  padding: 30px 40px;
+  background: linear-gradient(135deg, #1a3c6e 0%, #2a6df4 100%);
   color: #fff;
-  padding: 20px 20px;
   text-align: center;
 }
 
-.footer-content {
-  margin-bottom: 15px;
-}
-
 .footer-content h3 {
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #f4c430;
 }
 
 .footer-content p {
   font-size: 16px;
-  color: #ddd;
+  color: #e0e0e0;
 }
 
 .footer-bottom {
-  border-top: 1px solid #2a5c8a;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 15px;
+  margin-top: 15px;
 }
 
 .footer-bottom p {
   font-size: 14px;
-  color: #ddd;
+  color: #b0c4de;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar-logo {
+    font-size: 24px;
+  }
+
+  .navbar-menu select {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .hero {
+    height: 500px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  .benefits,
+  .discover-destinations {
+    padding: 60px 20px;
+  }
+
+  .benefits h2,
+  .discover-destinations h2 {
+    font-size: 32px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .city-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .city-image {
+    height: 200px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-content h3 {
+    font-size: 24px;
+  }
+
+  .footer-content p {
+    font-size: 14px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .navbar-menu select {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
   .hero {
     height: 400px;
   }
@@ -251,71 +393,9 @@ body {
     font-size: 16px;
   }
 
-  .benefits {
-    padding: 40px 20px;
-  }
-
-  .benefits h2 {
-    font-size: 28px;
-  }
-
-  .discover-destinations {
-    padding: 40px 20px;
-  }
-
+  .benefits h2,
   .discover-destinations h2 {
     font-size: 28px;
-  }
-
-  .section-subtitle {
-    font-size: 16px;
-  }
-
-  .city-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .city-card h3 {
-    font-size: 20px;
-  }
-
-  .city-card p {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    padding: 15px 20px;
-  }
-
-  .navbar-logo {
-    font-size: 20px;
-  }
-
-  .navbar-menu select {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  .hero {
-    height: 350px;
-  }
-
-  .hero-content h1 {
-    font-size: 24px;
-  }
-
-  .hero-content p {
-    font-size: 14px;
-  }
-
-  .benefits h2 {
-    font-size: 24px;
-  }
-
-  .discover-destinations h2 {
-    font-size: 24px;
   }
 
   .section-subtitle {
