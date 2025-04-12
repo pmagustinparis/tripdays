@@ -1,43 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/TravelGuide">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Plan your trip to Kyoto with Tripdays! Find out how many days to spend in Kyoto and get a tailored travel itinerary."
+      content="Plan your perfect Kyoto trip with Tripdays. Discover how many days to spend in Kyoto, a detailed 4–6 day itinerary, local tips, and practical information for Japan's cultural heart."
     />
     <meta
       name="keywords"
-      content="Kyoto travel days, Kyoto itinerary, Tripdays, travel planning"
+      content="Kyoto travel, how many days in Kyoto, Kyoto itinerary 4-6 days, best local tips for Kyoto, Kyoto travel guide, Tripdays"
     />
     <meta name="author" content="Tripdays" />
     <meta name="robots" content="index, follow" />
-    <title>Plan your perfect Kyoto adventure | Tripdays</title>
+    <title>
+      Kyoto Travel Guide: How Many Days to Spend in Kyoto - Tripdays
+    </title>
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="city-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-QBDBHNMZN6"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-QBDBHNMZN6");
-    </script>
   </head>
   <body>
     <!-- Navbar -->
@@ -65,105 +55,295 @@
       </div>
     </nav>
 
-    <!-- City Hero Section -->
-    <section class="city-hero">
-      <div
-        class="city-image"
-        style="background-image: url('../images/kyoto.jpg')"
-      ></div>
-      <h1>Plan your perfect Kyoto adventure</h1>
-      <p>Find out how many days to spend in Japan’s cultural heart.</p>
-    </section>
-
-    <!-- Main Content -->
-    <section class="city-content">
-      <h2>How many days to spend in Kyoto</h2>
-      <p>
-        Kyoto, the cultural heart of Japan, is known for its temples, gardens,
-        and traditions. To fully experience Kyoto, we recommend spending
-        <strong>4-6 days</strong>.
-      </p>
-      <p>
-        With 4-6 days, you can visit Fushimi Inari Shrine, explore the
-        Arashiyama Bamboo Grove, see Kinkaku-ji (Golden Pavilion), and stroll
-        through the historic Gion district. Add a day to experience a
-        traditional tea ceremony or visit nearby Nara.
-      </p>
-      <div class="itinerary">
-        <h3>Suggested Itinerary</h3>
-        <ul>
-          <li>
-            <strong>Day 1:</strong> Visit Fushimi Inari Shrine and its thousands
-            of torii gates.
-          </li>
-          <li>
-            <strong>Day 2:</strong> Explore the Arashiyama Bamboo Grove and
-            nearby temples.
-          </li>
-          <li>
-            <strong>Day 3:</strong> See Kinkaku-ji and stroll through Gion.
-          </li>
-        </ul>
+    <!-- Hero Section -->
+    <section
+      class="hero"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+          url('../images/kyoto.jpg?v=1') center/cover no-repeat;
+      "
+    >
+      <div class="hero-content">
+        <h1>Plan your perfect Kyoto adventure</h1>
+        <p>Find out how many days to spend in Japan's cultural heart.</p>
+        <a href="#days-to-spend" class="cta-button">Discover How Many Days</a>
       </div>
     </section>
 
-    <!-- Top Attractions Section -->
-    <section class="top-attractions">
-      <h2>Top attractions in Kyoto</h2>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/fushimi-inari.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Fushimi Inari Shrine</h3>
+    <!-- Days to Spend Section -->
+    <section id="days-to-spend" class="days-to-spend">
+      <h2>How many days to spend in Kyoto</h2>
+      <p>
+        Kyoto, the cultural heart of Japan, is renowned for its temples,
+        shrines, and traditional charm. To fully experience Kyoto, we recommend
+        spending
+        <span class="highlight-days" itemprop="duration"
+          ><i class="fas fa-clock"></i> 4–6 days</span
+        >.
+      </p>
+      <p>
+        With 4–6 days, you can visit Fushimi Inari Shrine, explore the
+        Arashiyama Bamboo Grove, wander through Gion, and take a day trip to
+        Nara or Uji. This duration lets you immerse yourself in Kyoto’s rich
+        heritage.
+      </p>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section class="itinerary">
+      <h2>Suggested Itinerary for Kyoto</h2>
+      <p class="itinerary-intro">
+        Here’s a suggested itinerary for 4–6 days in Kyoto. Days 1–4 cover the
+        essentials, while Days 5–6 are perfect for an extended stay.
+      </p>
+      <div class="itinerary-grid" itemprop="itinerary">
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 1: Arrival and Fushimi Inari
+          </h3>
           <p>
-            Walk through thousands of red torii gates at this iconic shrine.
+            Arrive in Kyoto and visit Fushimi Inari Shrine—walk through the
+            iconic red torii gates. In the evening, explore the downtown area
+            and enjoy a kaiseki dinner.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 2: Arashiyama and Kinkaku-ji
+          </h3>
+          <p>
+            Head to Arashiyama to see the Bamboo Grove and Tenryu-ji Temple. In
+            the afternoon, visit Kinkaku-ji (the Golden Pavilion) and enjoy its
+            serene surroundings.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 3: Gion and Eastern Kyoto
+          </h3>
+          <p>
+            Explore Gion, Kyoto’s geisha district—visit Yasaka Shrine and walk
+            along Hanami-koji Street. Then head to Kiyomizu-dera Temple for
+            panoramic views of the city.
+          </p>
+        </div>
+        <div class="itinerary-item essential">
+          <h3><i class="fas fa-calendar-day"></i> Day 4: Day Trip to Nara</h3>
+          <p>
+            Take a day trip to Nara to visit Todai-ji Temple and feed the
+            friendly deer in Nara Park. Return to Kyoto for a relaxing evening
+            at a traditional tea house.
+          </p>
+        </div>
+        <div class="itinerary-item extended">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 5: Northern Kyoto
+            <span class="extended-label">Extended Stay</span>
+          </h3>
+          <p>
+            Visit Ryoan-ji Temple for its famous rock garden and explore the
+            nearby Toei Kyoto Studio Park. In the evening, stroll along the Kamo
+            River.
+          </p>
+        </div>
+        <div class="itinerary-item extended">
+          <h3>
+            <i class="fas fa-calendar-day"></i> Day 6: Leisure and Departure
+            <span class="extended-label">Extended Stay</span>
+          </h3>
+          <p>
+            Spend your final day shopping for souvenirs at Nishiki Market or
+            visiting the Kyoto Imperial Palace. Depart from Kyoto with
+            unforgettable memories.
           </p>
         </div>
       </div>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/arashiyama-bamboo-grove.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Arashiyama Bamboo Grove</h3>
-          <p>Stroll through this serene bamboo forest.</p>
-        </div>
-      </div>
-      <div class="attraction-item">
-        <div
-          class="attraction-image"
-          style="background-image: url('../images/kinkaku-ji.jpg')"
-        ></div>
-        <div class="attraction-content">
-          <h3>Kinkaku-ji (Golden Pavilion)</h3>
-          <p>Admire this stunning gold-covered temple.</p>
-        </div>
-      </div>
     </section>
 
-    <!-- Local Tip Section -->
+    <!-- Local Tips Section -->
     <section class="local-tips">
-      <h2>Local tip</h2>
+      <h2><i class="fas fa-lightbulb"></i> Local Tips for Visiting Kyoto</h2>
+      <ul>
+        <li>
+          Rent a kimono for a day to immerse yourself in Kyoto’s culture—perfect
+          for photos at temples and shrines.
+        </li>
+        <li>
+          Visit Fushimi Inari early in the morning to avoid crowds and enjoy a
+          peaceful hike up the mountain.
+        </li>
+        <li>
+          Try local specialties like yatsuhashi (sweet rice cakes) or a matcha
+          dessert at a traditional tea house.
+        </li>
+        <li>
+          Use a Japan Rail Pass if you’re taking day trips to Nara or Uji—it’s
+          cost-effective for train travel.
+        </li>
+        <li>
+          Be respectful at temples and shrines—follow signs for photography
+          rules and dress modestly.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Practical Information Section -->
+    <section class="practical-info">
+      <h2>
+        <i class="fas fa-map-marked-alt"></i> Practical Information for Kyoto
+      </h2>
+      <h3>Getting Around</h3>
       <p>
-        <i class="fas fa-lightbulb"></i> Visit Gion in the evening to spot a
-        geisha on her way to an appointment.
+        Kyoto’s buses and trains are efficient—use an IC card (like Suica or
+        Icoca) for seamless travel. Renting a bicycle is also a great way to
+        explore the city.
+      </p>
+      <h3>Best Time to Visit</h3>
+      <p>
+        Spring (March to May) is ideal for cherry blossoms, while autumn
+        (October to November) offers stunning fall foliage. Summer can be hot
+        and humid, and winter is cold but less crowded.
+      </p>
+      <h3>Safety Tips</h3>
+      <p>
+        Kyoto is very safe, but be cautious of bicycle traffic in busy areas.
+        Follow temple etiquette and be mindful of your belongings in crowded
+        spots like Gion.
       </p>
     </section>
 
     <!-- Explore More Cities Section -->
-    <section class="explore-more">
-      <h2>Keep exploring</h2>
-      <p class="section-subtitle">
-        Discover more destinations to plan your perfect trip.
-      </p>
+    <section class="discover-destinations">
+      <h2>Explore More Cities</h2>
+      <p class="section-subtitle">Discover other amazing destinations.</p>
       <div class="city-grid">
+        <a href="/cities/paris.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/paris.jpg?v=1')"
+            role="img"
+            aria-label="Eiffel Tower in Paris"
+            loading="lazy"
+          ></div>
+          <h3>Paris</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Paris</button>
+        </a>
+        <a href="/cities/london.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/london.jpg?v=1')"
+            role="img"
+            aria-label="Big Ben and the London skyline"
+            loading="lazy"
+          ></div>
+          <h3>London</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover London</button>
+        </a>
+        <a href="/cities/bangkok.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/bangkok.jpg?v=1')"
+            role="img"
+            aria-label="Grand Palace in Bangkok"
+            loading="lazy"
+          ></div>
+          <h3>Bangkok</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Bangkok</button>
+        </a>
+        <a href="/cities/new-york.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/new-york.jpg?v=1')"
+            role="img"
+            aria-label="New York City skyline with the Empire State Building"
+            loading="lazy"
+          ></div>
+          <h3>New York</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover New York</button>
+        </a>
+        <a href="/cities/tokyo.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/tokyo.jpg?v=1')"
+            role="img"
+            aria-label="Shibuya Crossing in Tokyo"
+            loading="lazy"
+          ></div>
+          <h3>Tokyo</h3>
+          <p><span class="days-badge">5-7 days</span></p>
+          <button class="discover-button">Discover Tokyo</button>
+        </a>
+        <a href="/cities/dubai.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/dubai.jpg?v=1')"
+            role="img"
+            aria-label="Burj Khalifa in Dubai"
+            loading="lazy"
+          ></div>
+          <h3>Dubai</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Dubai</button>
+        </a>
+        <a href="/cities/istanbul.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/istanbul.jpg?v=1')"
+            role="img"
+            aria-label="Hagia Sophia in Istanbul"
+            loading="lazy"
+          ></div>
+          <h3>Istanbul</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Istanbul</button>
+        </a>
+        <a href="/cities/singapore.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/singapore.jpg?v=1')"
+            role="img"
+            aria-label="Marina Bay Sands in Singapore"
+            loading="lazy"
+          ></div>
+          <h3>Singapore</h3>
+          <p><span class="days-badge">3-5 days</span></p>
+          <button class="discover-button">Discover Singapore</button>
+        </a>
+        <a href="/cities/rome.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/rome.jpg?v=1')"
+            role="img"
+            aria-label="Colosseum in Rome"
+            loading="lazy"
+          ></div>
+          <h3>Rome</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Rome</button>
+        </a>
+        <a href="/cities/barcelona.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/barcelona.jpg?v=1')"
+            role="img"
+            aria-label="Sagrada Família in Barcelona"
+            loading="lazy"
+          ></div>
+          <h3>Barcelona</h3>
+          <p><span class="days-badge">4-6 days</span></p>
+          <button class="discover-button">Discover Barcelona</button>
+        </a>
         <a href="/cities/sydney.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/sydney.jpg')"
+            style="background-image: url('../images/sydney.jpg?v=1')"
+            role="img"
+            aria-label="Sydney Opera House"
+            loading="lazy"
           ></div>
           <h3>Sydney</h3>
           <p><span class="days-badge">5-7 days</span></p>
@@ -172,7 +352,10 @@
         <a href="/cities/cape-town.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/cape-town.jpg')"
+            style="background-image: url('../images/cape-town.jpg?v=1')"
+            role="img"
+            aria-label="Table Mountain in Cape Town"
+            loading="lazy"
           ></div>
           <h3>Cape Town</h3>
           <p><span class="days-badge">5-7 days</span></p>
@@ -181,13 +364,39 @@
         <a href="/cities/rio-de-janeiro.html" class="city-card">
           <div
             class="city-image"
-            style="background-image: url('../images/rio-de-janeiro.jpg')"
+            style="background-image: url('../images/rio-de-janeiro.jpg?v=1')"
+            role="img"
+            aria-label="Christ the Redeemer in Rio de Janeiro"
+            loading="lazy"
           ></div>
           <h3>Rio de Janeiro</h3>
           <p><span class="days-badge">5-7 days</span></p>
           <button class="discover-button">Discover Rio de Janeiro</button>
         </a>
+        <a href="/cities/prague.html" class="city-card">
+          <div
+            class="city-image"
+            style="background-image: url('../images/prague.jpg?v=1')"
+            role="img"
+            aria-label="Charles Bridge in Prague"
+            loading="lazy"
+          ></div>
+          <h3>Prague</h3>
+          <p><span class="days-badge">3-5 days</span></p>
+          <button class="discover-button">Discover Prague</button>
+        </a>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h3>Tripdays</h3>
+        <p>Plan your perfect trip.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Tripdays. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
