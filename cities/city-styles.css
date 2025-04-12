@@ -14,16 +14,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Animations for scroll reveal */
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.animate-on-scroll.visible {
-  opacity: 1;
-  transform: translateY(0);
+/* Ensure all elements are visible by default */
+section,
+h1,
+h2,
+h3,
+p,
+a,
+button,
+span,
+div {
+  opacity: 1 !important;
+  display: block;
+  visibility: visible;
 }
 
 /* Navbar */
@@ -38,11 +41,6 @@ body {
   top: 0;
   z-index: 1000;
   transition: background-color 0.3s;
-}
-
-.navbar.scrolled {
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
 }
 
 .navbar-logo {
@@ -80,9 +78,14 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   position: relative;
   overflow: hidden;
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
 }
 
 .hero-content h1 {
@@ -90,6 +93,7 @@ body {
   font-weight: 700;
   margin-bottom: 15px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
 }
 
 .hero-content p {
@@ -97,37 +101,26 @@ body {
   font-weight: 300;
   margin-bottom: 30px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
 }
 
 .cta-button {
   display: inline-block;
   padding: 14px 30px;
   background-color: #2a6df4;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 50px;
   font-size: 18px;
   font-weight: 500;
   box-shadow: 0 4px 15px rgba(42, 109, 244, 0.3);
   transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-  animation: slideUp 0.8s ease-out;
 }
 
 .cta-button:hover {
   background-color: #1a5dc4;
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(42, 109, 244, 0.4);
-}
-
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* Days to Spend Section */
@@ -161,23 +154,11 @@ body {
   font-weight: 700;
   color: #2a6df4;
   border: 2px solid #2a6df4;
-  animation: popIn 0.8s ease-out;
 }
 
 .highlight-days i {
   margin-right: 8px;
   color: #f4c430;
-}
-
-@keyframes popIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
 
 /* Itinerary Section */
@@ -263,7 +244,6 @@ body {
   padding: 80px 40px;
   background-color: #fff;
   position: relative;
-  overflow: hidden;
 }
 
 .local-tips::before {
@@ -275,7 +255,7 @@ body {
   height: 100%;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200' opacity='0.05'%3E%3Cpath d='M100 0L200 100L100 200L0 100z' fill='%232a6df4'/%3E%3C/svg%3E")
     repeat;
-  z-index: 0;
+  z-index: -1;
 }
 
 .local-tips h2 {
@@ -284,8 +264,6 @@ body {
   text-align: center;
   margin-bottom: 25px;
   color: #2d2d2d;
-  position: relative;
-  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -300,8 +278,6 @@ body {
   max-width: 800px;
   margin: 0 auto;
   list-style: none;
-  position: relative;
-  z-index: 1;
 }
 
 .local-tips li {
@@ -416,6 +392,7 @@ body {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 8px;
+  color: #2d2d2d;
 }
 
 .days-badge {
@@ -548,16 +525,5 @@ body {
 
   .city-image {
     height: 200px;
-  }
-}
-
-/* Ensure animations work for users who don't prefer reduced motion */
-@media (prefers-reduced-motion: no-preference) {
-  .animate-on-scroll {
-    opacity: 0;
-  }
-
-  .animate-on-scroll.visible {
-    opacity: 1;
   }
 }
